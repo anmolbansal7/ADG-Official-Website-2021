@@ -12,7 +12,7 @@ nav{
     min-height: 8vh;
     background: black;
     color: #E5E5E5;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .logo{
     letter-spacing: 5px;
@@ -21,11 +21,10 @@ nav{
 .navlinks{
     display: flex;
     justify-content: space-around;
-    width: 70%;
+    width: 75%;
     color: #E5E5E5;
 }
 .navlinks a{
-    font-weight: bold;
     font-size: 18px;
     color: #E5E5E5;
     text-decoration: none;
@@ -46,7 +45,7 @@ nav{
     .navlinks{
         display: flex;
         justify-content: space-around;
-        width: 50%;
+        width: 70%;
         color: #E5E5E5;
     }
 }
@@ -69,7 +68,7 @@ nav{
         transition: transform 0.5s ease-in;
     }
     .navlinks li{
-        opacity: 1;
+        opacity: 0;
     }
     .mobile{
         display: block;
@@ -92,9 +91,8 @@ nav{
     }
 }
 
-/*
 .toggle .line1{
-    transform: rotate(-45 deg) translate(-5px, 6px);
+    transform: rotate(-45 deg) translate(-5px,6px);
 }
 
 .toggle .line2{
@@ -102,6 +100,5 @@ nav{
 }
 
 .toggle .line3{
-    transform: rotate(45 deg) translate(-5px, -6px);
+    transform: rotate(45 deg) translate(-5px,-6px);
 }
-*/
