@@ -1,0 +1,199 @@
+a {
+	margin-bottom: 3%;
+}
+.footer h1,
+ul,
+p {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+.footer {
+	width: 100%;
+	background: black;
+	display: block;
+}
+.inner-footer {
+	width: 95%;
+	margin: 0 auto;
+	padding: 0px 10px;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	justify-content: center;
+	/* text-align: center; */
+	/* height: 32vh; */
+}
+.footer-items {
+	width: 33%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+/* .foot2{
+  margin-left: 10vw;
+*/
+.foot3 {
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+.sm {
+	margin-left: 20%;
+}
+.social-media ul {
+	margin-left: 35%;
+}
+.footer-items p {
+	color: #e5e5e5;
+	font-size: 14px;
+	text-align: justify;
+	line-height: 24px;
+}
+/* .footer-bottom {
+	padding: 10px;
+	text-align: center;
+	background: #121212;
+	color: #e5e5e5;
+	font-size: 12px;
+} */
+@media screen and (min-width: 1200px) {
+	.footer-items .foot2 {
+		margin-left: 30%;
+	}
+	.footer-items .foot1,
+	.foot3 {
+		margin-left: 20%;
+	}
+}
+@media screen and (min-width: 380px) and (max-width: 1200px) {
+	.footer-items:nth-child(1) {
+		width: 100%;
+
+		padding: 5px 10px;
+	}
+	.footer-items:nth-child(2) {
+		width: 50%;
+		padding: 0;
+	}
+	.footer-items:nth-child(3) {
+		width: 50%;
+		padding: 0;
+		margin: 0;
+	}
+	.foot1 {
+		margin-right: 0px;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.footer-items .foot2,
+	.foot1,
+	.foot3 {
+		padding: 0;
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 490px) {
+	.social-media ul {
+		margin-left: 10%;
+	}
+	.footer-items .foot2,
+	.foot1,
+	.foot3 {
+		padding: 0;
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 379px) {
+	.footer {
+		width: 100%;
+	}
+	.footer-items {
+		width: 100%;
+		padding: 0;
+	}
+	h1 {
+		margin-right: 0;
+	}
+	.foot1,
+	.foot3 {
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.footer-items .foot2 {
+		padding-left: 0;
+	}
+	.footer-items .foot2,
+	.foot1,
+	.foot3 {
+		padding: 0;
+		margin-left: 0;
+	}
+	.foot3 ul li {
+		margin-left: 20%;
+	}
+}
+
+.copyright {
+	text-align: center;
+	padding: 1%;
+	font-size: 16px;
+}
+h1 {
+	padding: 15px 0;
+	font-size: 20px;
+	color: #e5e5e5;
+	text-transform: uppercase;
+}
+
+ul {
+	list-style: none;
+	color: #e5e5e5;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	padding-inline-start: 0;
+}
+
+ul a {
+	text-decoration: none;
+	outline: none;
+	color: #e5e5e5;
+	transition: 0.3s;
+}
+
+ul li {
+	margin: 5px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+ul li:hover {
+	color: white;
+	font-weight: 525;
+}
+
+.icons {
+	margin-left: 20px;
+}
+.icons:hover {
+	color: white;
+	font-weight: 525;
+}
+.qlinks {
+	margin-left: 15%;
+}
+.qlinks li {
+	float: left;
+	width: 50%;
+	margin-bottom: 2%;
+	margin-left: 0;
+	text-align: left;
+
+	overflow-wrap: initial;
+}
+.headQL {
+	display: flex;
+	justify-content: center;
+}
