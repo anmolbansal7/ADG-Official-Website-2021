@@ -13,27 +13,22 @@
 		
 		<!-- Title and Logo-->
 		<title>ADG | VIT Vellore</title>
-		<!-- Favicon with Add to Home Screen Logo -->
-		<link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png">
-		<link rel="manifest" href="Assets/favicon/site.webmanifest">
-		<link rel="mask-icon" href="Assets/favicon/apple-touch-icon.png">
-		<meta name="msapplication-TileColor" content="#000000">
-		<meta name="theme-color" content="#000000">
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="Assets/Common-Assets/adglogo.png">
 	</head>
 
 	<body>
-		<div id="overlay" >
+		<div id="loader">
       		<img src="Assets/Common-Assets/adggif.gif" class="gif">
+
 		</div>
-		<div id="main">
+		<div id="content">
 		<!--NAVBAR Starts-->
 		<nav class="nav-active" id="navbar">
 			<!-- Logo in Navbar -->
 				<div class="logo">
 					<h4 style="text-decoration: none"><a href="/" style="text-decoration: none; color: #e6e6e6">ADG-VIT</a>
-						<img src="Assets/Common-Assets/adglogo.png" class="adg-logo" width="30px" height="30px">
+						<img src="Assets/Common-Assets/adglogo.png" class="adg-logo" style="width: 30px; height: 30px; margin-bottom: -1vh;"; >
 					</h4>
 				</div>
 			<!-- Nav Links -->
@@ -134,5 +129,6 @@
 		<!-- Linking JavaScript -->
 		<script src="js/nav-script.js"></script>
 		<script src="js/preloader.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</body>
 </html>
