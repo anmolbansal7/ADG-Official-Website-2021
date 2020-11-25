@@ -6,39 +6,44 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<!-- Linking CSS -->
 		<link type="text/css" rel="stylesheet" href="css/nav-style.css" />
-        <link type="text/css" rel="stylesheet" href="css/foot-style.css" />
-        <link type="text/css" rel="stylesheet" href="css/about.css" />
-        
-		<!-- External Links -->
+		<link type="text/css" rel="stylesheet" href="css/foot-style.css" />
+		<link type="text/css" rel="stylesheet" href="css/preloader.css" />
+		<link type="text/css" rel="stylesheet" href="css/about.css" />
 		
+        <!-- External Links -->
+		<!-- Google Font -> Poppins -->
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        
+		<!-- AOS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 		<!-- Title and Logo-->
 		<title>ADG | VIT Vellore</title>
-		<!-- Favicon with Add to Home Screen Logo -->
-		<link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png">
-		<link rel="manifest" href="Assets/favicon/site.webmanifest">
-		<link rel="mask-icon" href="Assets/favicon/safari-pinned-tab.svg" color="#000000">
-		<meta name="msapplication-TileColor" content="#000000">
-		<meta name="theme-color" content="#000000">
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="Assets/Common-Assets/adglogo.png">
 	</head>
 
 	<body>
+		<div id="loader">
+      		<img src="Assets/Common-Assets/adggif.gif" class="gif">
+
+		</div>
+		<div id="content">
 		<!--NAVBAR Starts-->
 		<nav class="nav-active" id="navbar">
 			<!-- Logo in Navbar -->
 				<div class="logo">
 					<h4 style="text-decoration: none"><a href="/" style="text-decoration: none; color: #e6e6e6">ADG-VIT</a>
-						<img src="Assets/Common-Assets/adglogo.png" class="adg-logo" width="30px" height="30px">
+						<img src="Assets/Common-Assets/adglogo.png" class="adg-logo" style="width: 30px; height: 30px; margin-bottom: -1vh;"; >
 					</h4>
 				</div>
 			<!-- Nav Links -->
 			<ul class="navlinks">
 				<li>
-					<a href="/" class="nav-link nav-link-grow-up" id="active">Home</a>
+					<a href="/" class="nav-link nav-link-grow-up">Home</a>
 				</li>
 				<li>
-					<a href="about" class="nav-link nav-link-grow-up">About</a>
+					<a href="about" class="nav-link nav-link-grow-up" id="active">About</a>
 				</li>
 				<li>
 					<a href="partners" class="nav-link nav-link-grow-up">Partners</a>
@@ -65,13 +70,16 @@
 			</div>
 		</nav>
 		<!--NAVBAR Ends-->
-        
-        <!-- About Page -->
+
+
+		<!-- About Page -->
 		<div class="about-content" style="background-color: #1a1a1a;">
 			<div class="about-1">
+                <div data-aos="zoom-out-up">
 				<img class="adglogo" src="Assets/About-Page/adglogo2.svg" />
+				</div>
 				<br /><br /><br />
-				<p class="about-content">
+				<div class="about-text" data-aos="fade-up" data-aos-delay= "1000">
 					Apple Developers Group (ADG) is a name synonymous
 					<br />
 					with excellence, simplicity and dedication. It is a
@@ -86,12 +94,12 @@
 					We are blessed to be guided by our faculty co-ordinator
 					<br />
 					Prof. Rajkumar R.
-				</p>
+				</div>
             </div>
             <div class="about-1">
-				<h2 class="about-head">OUR MISSION</h2>
+				<div class="about-head" data-aos="zoom-out-up"><b>OUR MISSION</b></div>
 				<br /><br /><br />
-				<p class="about-content">
+                <div class="about-text" data-aos="fade-up" data-aos-delay="1000" >
                     Our mission is to provide a base for zealous students so
                     <br>
                     that they can nurture, grow and explore the dynamic world
@@ -107,13 +115,12 @@
                     and leadership qualities and promote community and
                     <br>
                     workforce development.
-
-				</p>
+				</div>
 			</div>
 			<div class="about-1">
-				<h2 class="about-head">OUR VISION</h2>
+				<div class="about-head" data-aos="zoom-out-up"><b>OUR VISION</b></div>
 				<br /><br /><br />
-				<p class="about-content">
+				<div class="about-text" data-aos="fade-up" data-aos-delay="1000" >
                     At ADG-VIT, our vision is to elevate the standards of
                     <br>
                     technical education and foster leadership qualities by 
@@ -131,11 +138,10 @@
                     indispensable guidance, workshops and events for
                     <br>
                     students to explore their full potential.
-				</p>
+				</div>
 			</div>
-			
 		</div>
-
+		<!-- About Ends -->
 
 		<!-- Footer Start -->
 		<div class="footer">
@@ -193,7 +199,22 @@
       </div>
     </div>
   <!-- End Footer -->
+</div>
+		
 		<!-- Linking JavaScript -->
 		<script src="js/nav-script.js"></script>
+		<script src="js/preloader.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>   
+            AOS.init({
+                easing: 'ease-out-back',
+                duration: 800,
+                delay: 300,
+                once: false,
+                disable: 'mobile'
+            }); 
+		</script>
+		
 	</body>
 </html>

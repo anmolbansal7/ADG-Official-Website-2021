@@ -12,6 +12,7 @@ p {
 	width: 100%;
 	background: black;
 	display: block;
+	font-family: 'Poppins';
 }
 .inner-footer {
 	width: 95%;
