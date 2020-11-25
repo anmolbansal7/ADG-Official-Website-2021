@@ -6,6 +6,7 @@ html {
 
 p {
   font-size: 1.6rem;
+  float: right;
 }
 
 body {
@@ -57,6 +58,10 @@ body {
 
 .mobile1 {
   display: none;
+}
+
+.description{
+  line-height: 28px;
 }
 
 @media screen and (max-width: 320px) {
