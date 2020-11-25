@@ -3,7 +3,9 @@
 	margin: 0px;
 	list-style: none;
 	box-sizing: border-box;
+	font-family: "sf_pro_displayregular";
 }
+
 /* Navbar starts */
 nav {
 	display: flex;
@@ -12,7 +14,6 @@ nav {
 	min-height: 8vh;
 	background-color: black;
 	color: #e5e5e5;
-	font-family: 'Poppins';
 }
 .logo {
 	letter-spacing: 5px;
@@ -52,7 +53,6 @@ nav {
 /* Nav Link Animation */
 .nav-link:hover {
 	opacity: 1;
-	font-weight: 525;
 }
 
 .nav-link::before {
