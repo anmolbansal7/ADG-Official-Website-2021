@@ -19,6 +19,16 @@ nav {
 	letter-spacing: 5px;
 	font-size: 22px;
 }
+img.adg-logo{
+	 width: 30px; 
+	 height: 30px; 
+	 margin-bottom: -1vh; 
+	 display: inline; 
+}
+h4.logo-text{
+		text-decoration: none; 
+		display: inline;"
+	}
 /* Nav Links */
 .navlinks {
 	display: flex;
@@ -31,7 +41,7 @@ nav {
 	position: relative;
 }
 .navlinks a {
-	font-size: 16px;
+	font-size: 18px;
 	color: #e5e5e5;
 	text-decoration: none;
 	letter-spacing: 1.5px;
@@ -94,7 +104,7 @@ nav {
 		color: #e5e5e5;
 	}
 }
-
+	
 @media screen and (max-width: 678px) {
 	body,
 	html {
@@ -151,3 +161,6 @@ nav {
 .toggle .line3 {
 	transform: rotate(45deg) translate(-5px, -6px);
 }
+
+
+
