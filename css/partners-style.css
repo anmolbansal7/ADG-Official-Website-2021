@@ -4,6 +4,9 @@
     list-style: none;
     box-sizing: border-box;
 }
+html{
+    font-family: 'Roboto', sans-serif;
+}
 body{
     background-color: #1A1A1A;
 }
@@ -24,7 +27,6 @@ body{
     align-items: center; 
 }
 .partner-info{
-    align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     padding-top: 150px;
@@ -33,5 +35,12 @@ body{
     padding-left: 150px;
     width: 100%;
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 768px)
+{
+    .leftside, .rightside{
+        height: 100vh;
+    }
 }
