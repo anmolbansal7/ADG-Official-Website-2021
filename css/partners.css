@@ -10,9 +10,16 @@ html{
 body{
     background-color: #1A1A1A;
 }
+.partners-content{
+    justify-content: center;
+    text-align: center;
+    padding-top: 4%;
+    padding-left: 6%;
+
+    height: 92vh;
+}
 .partner{
     display: flex;
-    padding: 130px;
 }
 .partners-heading{
     color: white;
@@ -29,10 +36,6 @@ body{
 .partner-info{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    padding-right: 150px;
-    padding-left: 150px;
     width: 100%;
     letter-spacing: 1px;
     font-size: 24px;
