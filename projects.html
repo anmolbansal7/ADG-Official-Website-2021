@@ -8,14 +8,17 @@
 		<link type="text/css" rel="stylesheet" href="css/nav-style.css" />
 		<link type="text/css" rel="stylesheet" href="css/foot-style.css" />
 		<link type="text/css" rel="stylesheet" href="css/preloader.css" />
+		<link type="text/css" rel="stylesheet" href="webfontkit-20201125-062530/stylesheet.css" />
 		<link type="text/css" rel="stylesheet" href="css/projects.css" />
-		
-		<!-- External Links -->
-		
+    <!-- External Links -->
+    <!-- AOS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<!-- Title and Logo-->
 		<title>ADG | VIT Vellore</title>
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" href="Assets/Common-Assets/adglogo.png">
+		<!--Font Awesome-->
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	</head>
 
 	<body>
@@ -28,14 +31,15 @@
 		<nav class="nav-active" id="navbar">
 			<!-- Logo in Navbar -->
 				<div class="logo">
-					<h4 style="text-decoration: none"><a href="/" style="text-decoration: none; color: #e6e6e6">ADG-VIT</a>
-						<img src="Assets/Common-Assets/adglogo.png" class="adg-logo" style="width: 30px; height: 30px; margin-bottom: -1vh;"; >
-					</h4>
+					<a href="/" style="text-decoration: none; color: #e6e6e6">
+					<img src="Assets/Common-Assets/adglogo.png" class="adg-logo">
+					<h4 class="logo-text">ADG-VIT</h4>
+					</a>
 				</div>
 			<!-- Nav Links -->
 			<ul class="navlinks">
 				<li>
-					<a href="/" class="nav-link nav-link-grow-up" id="active">Home</a>
+					<a href="/" class="nav-link nav-link-grow-up">Home</a>
 				</li>
 				<li>
 					<a href="about" class="nav-link nav-link-grow-up">About</a>
@@ -47,7 +51,7 @@
 					<a href="events" class="nav-link nav-link-grow-up">Events</a>
 				</li>
 				<li>
-					<a href="projects" class="nav-link nav-link-grow-up">Projects</a>
+					<a href="projects" class="nav-link nav-link-grow-up" id="active">Projects</a>
 				</li>
 				<li>
 					<a href="team" class="nav-link nav-link-grow-up">Team</a>
@@ -69,74 +73,62 @@
 		
 		<!-- Put the content here -->
 		
-		
-		<!--Projects Page-->
-		
-		<div>
-			<div class="row section">
-			  <img
-				src="Assets/Projects-Page/TapVIT.svg"
-				alt="iPhone"
-				class="photo laptop"
-				data-aos="fade-right"
-				data-aos-duration="800"
-			  />
-			  <div class="center">
-				<img
-				  src="Assets/Projects-Page/tap_half.svg"
-				  alt="cropped iPhone"
-				  class="mobile1"
-				  data-aos="zoom-in"
-				  data-aos-duration="800"
-				/>
-			  </div>
-	  
-			  <div class="text" data-aos="fade-up" data-aos-duration="800">
-				<h1>TAP.</h1>
-				<p class="description">
-				  TAP is an app with powerful feautures to login to VIT WiFi without
-				  any hassle. You can now auto-login to VIT WiFi and operate various
-				  social media applications using a single app. Say goodbye to the
-				  dialog box that appears every time you try logging in!
-				</p>
-				<br />
-				<br />
-				<div class="download-info">
-				  <p>Download Now from:</p>
-				  <div class="download-links">
-					<a
-					  href="https://play.google.com/store/apps/details?id=patel.abhay.adg_tap_app"
-					  target="_blank"
-					>
-					  <img
-						src="Assets/Projects-Page/playstore_logo.png"
-						alt="Google Play logo"
-						class="icon"
-					  />
-					</a>
-					<br>
-					<a 
-						href="https://apps.apple.com/us/app/tap-vit/id1436133416"
-						target="_blank"
-					>
-					  <img
-						src="Assets/Projects-Page/appstore_logo.png"
-						alt="App Store logo"
-						class="icon"
-					  />
-					</a>
-					<br>
-					<br>
-					
-				  </div>
-				</div>
-			  </div>
-			</div>
-			</div>
-		  </div>
+		<!-- MAIN Starts -->
+    <div>
+      <div class="row section">
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+        <img
+          src="Assets/Projects-Page/TapVIT.svg"
+          alt="iPhone"
+          class="photo laptop"
+        />
+        <div class="center">
+          <img
+            src="Assets/Projects-Page/tap_half.svg"
+            alt="cropped iPhone"
+            class="mobile1"
+          />
+        </div>
+        </div>
 
-		
-
+        <div class="text">
+          <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><h1>TAP.</h1></div>
+          <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+          <p class="description">
+            TAP is an app with powerful feautures to login to VIT WiFi without
+            any hassle. You can now auto-login to VIT WiFi and operate various
+            social media applications using a single app. Say goodbye to the
+            dialog box that appears every time you try logging in!
+          </p>
+          </div>
+          <br />
+          <br />
+          <div class="download-info" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <p style="padding-bottom: 20px;">Download Now from:</p>
+          
+            <div class="download-links">  
+              <a
+                href="https://play.google.com/store/apps/details?id=patel.abhay.adg_tap_app"
+                target="_blank"
+              >
+                <img
+                  src="Assets/Projects-Page/Google_Play_Arrow_logo.png"
+                  alt="Google Play logo"
+                  class="icon"
+                />
+              </a>
+              <a href="https://apps.apple.com/us/app/tap-vit/id1436133416">
+                <img
+                  src="Assets/Projects-Page/appstore1.png"
+                  alt="App Store logo"
+                  class="icon"
+                />
+              </a>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
 		
 		<!-- Put the content till here -->
 		
@@ -152,9 +144,9 @@
 							  Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. 
 							  It is a registered student community at VIT, Vellore established under the Apple University program. 
 							  A coterie of talented minds seeking not just success but perfection.
-             				</p>
-        			</div>
-    			</div>
+             </p>
+        </div>
+    </div>
         <div class="footer-items">
             <div class="foot2">
                 <h1 class="headQL">Quick Links</h1>
@@ -180,8 +172,10 @@
                                 <li><a href="https://www.facebook.com/vitios/" target="_blank"><img src="Assets/Common-Assets/fb.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Facebook </span></a></li>
                                  <li><a href="https://www.linkedin.com/company/adgvit/" target="_blank"><img src="Assets/Common-Assets/linkedin.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons">Linkedin</span></a></li>
                                  <li><a href="https://www.instagram.com/adgvit/" target="_blank"><img src="Assets/Common-Assets/insta.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Instagram</span></a></li>
-                                 <li><a href="https://twitter.com/adgvit" target="_blank"><img src="Assets/Common-Assets/twitter.png" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Twitter</span></a></li>
-                             </ul>
+                                 <li><a href="https://medium.com/adg-vit" target="_blank"><img src="Assets/Common-Assets/Medium.svg" style="width: 18px; height: 18px; float: left; overflow: hidden;"></i><span class="icons" >Medium</span></a></li>
+                                 <li><a href="https://github.com/ADG-VIT" target="_blank"><i class="fab fa-github"></i><span class="icons" >GitHub</span></a></li>
+							     
+								</ul>
                          </div>
                         </div>
             </div>
@@ -201,6 +195,10 @@
 </div>
 		<!-- Linking JavaScript -->
 		<script src="js/nav-script.js"></script>
-		<script src="js/preloader.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>   
+            AOS.init(); 
+		</script>
 	</body>
 </html>
