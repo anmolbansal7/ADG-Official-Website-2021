@@ -99,7 +99,6 @@ h2{
 @media screen and (min-width: 380px) and (max-width: 1200px) {
 	.footer-items:nth-child(1) {
 		width: 100%;
-
 		padding: 5px 10px;
 	}
 	.footer-items:nth-child(2) {
@@ -243,6 +242,8 @@ ul li:hover {
 	display: inline-block;
 	width: 60px;
 	height: 30px;
+	margin-top: 40px;
+	margin-right: 50px;
   }
   
   /* Hide default HTML checkbox */
