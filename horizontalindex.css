@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #1a1a1a;
+    font-family: "sf_pro_displayregular";
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.girl{
+    width: 500px;
+    height: 500px;
+    left: 375px;
+    top: 20px;
+    position: absolute;
+    align-items: center;
+}
+.adglogo1{
+    position: absolute;
+    width: 350px;
+    height: 100px;
+    left: 450px;
+    top: 375px;
+}
+.tagline{
+    position: absolute;
+    width: 360px;
+    height: 40px;
+    left: 450px;
+    top: 450px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container
