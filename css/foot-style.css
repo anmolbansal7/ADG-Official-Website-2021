@@ -8,7 +8,9 @@
 a {
 	margin-bottom: 3%;
 }
-.footer h1, ul,p {
+.footer h1,
+ul,
+p {
 	margin-block-start: 0;
 	margin-block-end: 0;
 }
@@ -17,7 +19,7 @@ a {
 	background: black;
 	display: block;
 }
-.footer-bottom{
+.footer-bottom {
 	background-color: black;
 }
 .inner-footer {
@@ -28,7 +30,7 @@ a {
 	flex-wrap: wrap;
 	box-sizing: border-box;
 	justify-content: center;
-	/* text-align: center; */
+	/* text-align: center; 
 	/* height: 32vh; */
 }
 .footer-items {
@@ -45,18 +47,18 @@ a {
 	text-align: center;
 	justify-content: center;
 }
-.contact-form .contact-input{
-    background: #272727;
-    color: #bebdbd;
-    margin-bottom: 10px;
-    line-height: 1.5em;
-    padding: .9rem 1.4rem;
-    border: none;
+.contact-form .contact-input {
+	background: #272727;
+	color: #bebdbd;
+	margin-bottom: 10px;
+	line-height: 1.5em;
+	padding: 0.9rem 1.4rem;
+	border: none;
 }
-.contact-form .contact-input:focus{
-    background-color: #1a1a1a;
+.contact-form .contact-input:focus {
+	background-color: #1a1a1a;
 }
-h2{
+h2 {
 	color: white;
 }
 .sm {
@@ -71,16 +73,16 @@ h2{
 	text-align: justify;
 	line-height: 24px;
 }
-.logo-footer{
-	margin-top: 20px;
+.logo-footer {
+	padding-top: 5%;
 }
-.social-icons{
-    width: 45px;
-    height: 41px;
-    padding-top: 5px;
-    margin-right: 5px;
-    text-align: center;
-    display: inline-block;
+.social-icons {
+	width: 45px;
+	height: 41px;
+	padding-top: 5px;
+	margin-right: 5px;
+	text-align: center;
+	display: inline;
 	font-size: 18px;
 }
 /* .footer-bottom {
@@ -170,6 +172,7 @@ h2{
 
 .copyright {
 	text-align: center;
+	background-color: #000000;
 	padding: 1%;
 	font-size: 16px;
 	color: #e5e5e5;
@@ -206,13 +209,13 @@ ul li:hover {
 	font-weight: 525;
 }
 
-.icons {
+/* .icons {
 	margin-left: 20px;
 }
 .icons:hover {
 	color: white;
 	font-weight: 525;
-}
+} */
 .qlinks {
 	margin-left: 15%;
 }
@@ -228,16 +231,16 @@ ul li:hover {
 	display: flex;
 	justify-content: center;
 }
-.btn{
-    padding: .5rem 1rem;
-    background-color: #006669;
-    color: white;
-    border: 1px solid transparent;
-    border-radius: .25rem;
+.btn {
+	padding: 0.5rem 1rem;
+	background-color: #006669;
+	color: white;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
 }
-.btn:hover{
-    color: white;
-    background: #005255;
+.btn:hover {
+	color: white;
+	background: #005255;
 }
 /* The switch - the box around the slider */
 .switch {
@@ -247,17 +250,17 @@ ul li:hover {
 	height: 30px;
 	margin-top: 40px;
 	margin-right: 50px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+}
+
+/* Hide default HTML checkbox */
+.switch input {
 	opacity: 0;
 	width: 0;
 	height: 0;
-  }
-  
-  /* The slider */
-  .slider {
+}
+
+/* The slider */
+.slider {
 	position: absolute;
 	cursor: pointer;
 	top: 0;
@@ -265,11 +268,11 @@ ul li:hover {
 	right: 0;
 	bottom: 0;
 	background-color: #ccc;
-	-webkit-transition: .4s;
-	transition: .4s;
-  }
-  
-  .slider:before {
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.slider:before {
 	position: absolute;
 	content: "";
 	height: 22px;
@@ -277,30 +280,63 @@ ul li:hover {
 	left: 4px;
 	bottom: 4px;
 	background-color: white;
-	-webkit-transition: .4s;
-	transition: .4s;
-  }
-  
-  input:checked + .slider {
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider {
 	background-color: #1a1a1a;
-  }
-  
-  input:focus + .slider {
+}
+
+input:focus + .slider {
 	box-shadow: 0 0 1px #1a1a1a;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked + .slider:before {
 	-webkit-transform: translateX(26px);
 	-ms-transform: translateX(26px);
 	transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+/* Rounded sliders */
+.slider.round {
 	border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
 	border-radius: 50%;
-  }
-  
+}
+
+/* icons */
+.icons {
+	text-align: center;
+	padding-top: 10%;
+}
+
+.icons i {
+	color: #ffffff;
+	background: rgb(0, 0, 0);
+	height: 10%;
+	width: 20%;
+	padding: 13px;
+	margin: 0 10px;
+	border-radius: 50px;
+	border: 2px solid rgb(255, 255, 255);
+	transition: all 200ms ease;
+	text-decoration: none;
+	position: relative;
+	margin-top: 3%;
+	font-size: 100%;
+}
+.icons a {
+	text-decoration: none;
+}
+.icons i:hover,
+.icons i:active {
+	color: rgb(0, 0, 0);
+	background: #ffffff;
+	cursor: pointer !important;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	text-decoration: none;
+}
