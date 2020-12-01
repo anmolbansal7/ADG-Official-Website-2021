@@ -1,11 +1,7 @@
 body{
 	overflow-x: hidden;
-<<<<<<< Updated upstream
-	font-family: "sf_pro_displayregular";
-=======
 	background-color: #1a1a1a;
 	color: #ffffff;
->>>>>>> Stashed changes
 } 
 
 body.light-theme{
