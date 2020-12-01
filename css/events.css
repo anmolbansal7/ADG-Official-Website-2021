@@ -11,6 +11,7 @@ p{
     font-size: 48px;
     letter-spacing: 0.06em;
     text-align: left;
+    color: white;
 }
 .event-images{
     width: 100%;
@@ -40,5 +41,5 @@ img{
 }
 .hackgrid{
     position: relative;
-    bottom: 44px;
+    bottom: 24px;
 }
