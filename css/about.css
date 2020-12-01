@@ -1,10 +1,18 @@
 body{
 	overflow-x: hidden;
-	font-family: "sf_pro_displayregular";
+	background-color: #1a1a1a;
+	color: #ffffff;
 } 
 
+body.light-theme{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+
+
 .about-content {
-	background-color: #1a1a1a;
+	/* background-color: #1a1a1a; */
 	width: 100%;
 	font-family: "sf_pro_displayregular";
 	padding-bottom: 6%;
@@ -19,7 +27,6 @@ body{
 .about-text {
 	display: block;
 	text-align: center;
-	color: #ffffff;
 	font-size: 160%;
 	font-weight: 500;
 }
@@ -31,7 +38,6 @@ img.adglogo {
 }
 
 .about-head{
-	color: #ffffff;
 	font-size: 250%;
 	text-align: center;
 }
