@@ -2,13 +2,25 @@ html{
     background-color: #1a1a1a;
 }
 .home-icon{
-    width: 400px;
-    height: 400px;
+    width: 375px;
+    height: 375px;
     text-align: center;
 }
 .home-logo{
-    width: 350px;
-    height: 70px;
+    width: 400px;
+    height: 80px;
+    position: relative;
+    bottom: 70px;
+}
+#tagline{
+    position: relative;
+    bottom: 70px;
+    letter-spacing: 0.2em;
+}
+#about-button{
+    position: relative;
+    bottom: 70px;
+    margin-bottom: -10px;
 }
 .heading-home{
     font-size: 96px;
@@ -16,7 +28,7 @@ html{
     font-family: "sf_pro_displayregular";
     font-style: normal;
     font-weight: bold;
-    line-height: 115px;
+    line-height: 100px;
     text-align: center;
     letter-spacing: 0.06em;
 }
@@ -42,10 +54,10 @@ html{
     cursor: pointer;
     border: none;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .about-home, .projects-home, .events-home, .team-home{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
