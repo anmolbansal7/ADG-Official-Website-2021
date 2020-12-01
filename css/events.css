@@ -2,7 +2,7 @@ body{
     background-color: #1a1a1a;
     font-family: "sf_pro_displayregular";
 }
-p{
+p.text{
     color: white;
     font-size: 16px;
     text-align: left;
