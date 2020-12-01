@@ -1,0 +1,51 @@
+html{
+    background-color: #1a1a1a;
+}
+.home-icon{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+.home-logo{
+    width: 350px;
+    height: 70px;
+}
+.heading-home{
+    font-size: 96px;
+    color: white;
+    font-family: "sf_pro_displayregular";
+    font-style: normal;
+    font-weight: bold;
+    line-height: 115px;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.description-home{
+    font-family:"sf_pro_displayregular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #B9B9B9;
+}
+.button-home{
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "sf_pro_displayregular";
+    letter-spacing: 0.06em;
+    background-color: #1784FF;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about-home, .projects-home, .events-home, .team-home{
+    text-align: center;
+    margin-top: 50px;
+}
