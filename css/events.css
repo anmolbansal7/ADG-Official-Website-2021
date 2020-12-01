@@ -22,7 +22,6 @@ img{
 .iosfusion, .unidev, .hackgrid{
     text-align: center;
     display: inline-block;
-    height: 900px;
 }
 .events-page{
     overflow: auto;
@@ -31,7 +30,6 @@ img{
 .event-info{
     padding-right: 200px;
     padding-left: 200px;
-    padding-bottom: 100px;
 }
 .unidev{
     position: relative;
