@@ -96,7 +96,8 @@
                                 </a>
                                 <a href="https://www.linkedin.com/company/adgvit/" target="_blank">
                                     <i class="fa fa-linkedin"></i>
-                                </a>
+								</a>
+								<br>
                                 <a href="https://www.instagram.com/adgvit/" target="_blank">
                                     <i class="fa fa-instagram"></i>
                                 </a>
@@ -135,9 +136,11 @@
                 <div class="footer-items contact-form">
 							<h1 class="headQL">CONTACT US</h1>
 							<br>
-							<form action="" method="">
-								<input type="email" name="email" class="text-input contact-input" placeholder="Your email address">
-								<br>
+							<form action="#" method="" id="form">
+								<div class="inputBox">
+								<input type="text" name="" class="text-input contact-input" id="email" placeholder="Your email address" onkeydown="validation()">
+									<span id="text"></span>
+							</div>
 								<textarea class="text-input contact-input" name="message" placeholder="Your message" cols="19"></textarea>
 								<br>
 								<button type="submit" class="btn" style="margin-left: 90px;">Send<i class="fa fa-paper-plane" style="padding-left: 3px;" aria-hidden="true"></i></button>
@@ -160,5 +163,27 @@
 		<!-- Linking JavaScript -->
 		<script src="js/nav-script.js"></script>
 		<script src="js/preloader.js"></script>
-	</body>
+		<script type="text/JavaScript">
+			function validation()
+			{
+				var form = document.getElementByID("form");
+				var email = document.getElementByID("email").value;
+				var text = document.getElementbyID("text");
+				var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+				if(email.match(pattern)){
+					form.classList.add("valid");
+					form.classList.remove("invalid");
+				}
+				else{
+					form.classList.remove("valid");
+					form.classList.add("invalid");
+				}
+				if(email == "")
+				{
+					form.classList.remove("valid");
+					form.classList.remove("invalid");
+				}
+			}
+		</script>
+</body>
 </html>

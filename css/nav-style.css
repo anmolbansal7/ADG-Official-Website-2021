@@ -15,6 +15,10 @@ nav {
 	background-color: black;
 	color: #e5e5e5;
 }
+nav.light-theme{
+	/* color: #B7B4B4; */
+	background-color: #2F2F2F;
+}
 .logo {
 	letter-spacing: 5px;
 	font-size: 22px;
