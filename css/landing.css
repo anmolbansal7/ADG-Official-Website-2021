@@ -1,0 +1,13 @@
+.about{
+    align-items: center;
+    height: 800px;
+}
+.girl{
+    position: absolute;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+.logo{
+    height: 100px;
+}
