@@ -1,20 +1,18 @@
-body{
+body {
 	overflow-x: hidden;
 	background-color: #1a1a1a;
 	color: #ffffff;
-} 
+}
 
-body.light-theme{
+body.light-theme {
 	background-color: #ffffff;
 	color: #000000;
 }
 
-
-
 .about-content {
 	/* background-color: #1a1a1a; */
 	width: 100%;
-	font-family: "sf_pro_displayregular";
+	/* font-family: "sf_pro_displayregular"; */
 	padding-bottom: 6%;
 }
 
@@ -27,7 +25,7 @@ body.light-theme{
 .about-text {
 	display: block;
 	text-align: center;
-	font-size: 160%;
+	font-size: 160%;	
 	font-weight: 500;
 }
 
@@ -37,32 +35,38 @@ img.adglogo {
 	margin-right: auto;
 }
 
-.about-head{
+.about-head {
 	font-size: 250%;
 	text-align: center;
 }
 
 @media screen and (max-width: 678px) {
-    br{
-		content:' ';
+	br {
+		content: " ";
 	}
-	br:after{
-		content:' ';
+
+	br:after {
+		content: " ";
 	}
-	
-	img.adglogo{
+
+	img.adglogo {
 		width: 40%;
 		padding-top: 10%;
 		padding-bottom: 10%;
 	}
-	.about-text{
-		font-size: 100%;
+
+	.about-text {
+		font-size: 110%;
+		line-height: 1.5;
+		display: inline-block;
+		vertical-align: middle;
 	}
-	.about-content{
+
+	.about-content {
 		padding: 10%;
 	}
-	.about-head{
+
+	.about-head {
 		padding-bottom: 10%;
 	}
 }
-
