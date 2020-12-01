@@ -1,6 +1,15 @@
-html{
-    background-color: #1a1a1a;
+body{
+    overflow-x: hidden;
+	background-color: #1a1a1a;
+	color: #ffffff;
 }
+
+body.light-theme {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+
 .home-icon{
     width: 375px;
     height: 375px;
@@ -24,7 +33,6 @@ html{
 }
 .heading-home{
     font-size: 96px;
-    color: white;
     font-family: "sf_pro_displayregular";
     font-style: normal;
     font-weight: bold;
@@ -40,7 +48,7 @@ html{
     line-height: 29px;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #B9B9B9;
+    /* color: #B9B9B9; */
 }
 .button-home{
     width: 120px;

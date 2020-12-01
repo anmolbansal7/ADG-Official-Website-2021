@@ -12,6 +12,9 @@ body.light-theme{
 	color: #000000;
 }
 
+a{
+	text-decoration: none;
+}
 .text h1 {
 	font-size: 85px;
 }
