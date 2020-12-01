@@ -9,12 +9,10 @@ body.light-theme{
 	color: #000000;
 }
 
-
-
 .about-content {
 	/* background-color: #1a1a1a; */
 	width: 100%;
-	font-family: "sf_pro_displayregular";
+	/* font-family: "sf_pro_displayregular"; */
 	padding-bottom: 6%;
 }
 
@@ -43,9 +41,11 @@ img.adglogo {
 }
 
 @media screen and (max-width: 678px) {
-    br{
+	
+	br{
 		content:' ';
 	}
+	
 	br:after{
 		content:' ';
 	}
@@ -55,12 +55,18 @@ img.adglogo {
 		padding-top: 10%;
 		padding-bottom: 10%;
 	}
+	
 	.about-text{
-		font-size: 100%;
+		font-size: 110%;
+		line-height: 1.5;
+  		display: inline-block;
+  		vertical-align: middle;
 	}
+	
 	.about-content{
 		padding: 10%;
 	}
+	
 	.about-head{
 		padding-bottom: 10%;
 	}

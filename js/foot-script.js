@@ -5,6 +5,7 @@ const foot = document.getElementById("footer");
 const lightImg = document.getElementById("light-mode-img");
 const darkImg = document.getElementById("dark-mode-img");
 
+
 toggle.addEventListener("input", (e) => {
 	const isChecked = e.target.checked;
 

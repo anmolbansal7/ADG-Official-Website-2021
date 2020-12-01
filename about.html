@@ -11,32 +11,29 @@
 		<link type="text/css" rel="stylesheet" href="css/about.css" />
 		<link type="text/css" rel="stylesheet" href="webfontkit-20201125-062530/stylesheet.css" />
 		
-        <!-- External Links -->
+		<!-- External Links -->
+		<!-- Mode Toggle Icons -->
         <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
 		<!-- AOS -->
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<!--Font Awesome-->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
-
+		
 		<!-- Title and Logo-->
 		<title>ADG | VIT Vellore</title>
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" href="Assets/Common-Assets/adglogo.png">
-		<!--Font Awesome-->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
 	</head>
 
 	<body>
+
 		<div id="loader">
       		<img src="Assets/Common-Assets/adggif.gif" class="gif">
-
 		</div>
+
 		<div id="content">
 		<!--NAVBAR Starts-->
 		<nav class="nav-active" id="navbar">
@@ -84,11 +81,11 @@
 		<!-- About Page -->
 		<div class="about-content">
 			<div class="about-1">
-                <div data-aos="zoom-out-up">
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
 				<img class="adglogo" src="Assets/About-Page/adglogo2.svg" />
 				</div>
 				<br /><br /><br />
-				<div class="about-text" data-aos="fade-up" data-aos-delay= "1000">
+				<div class="about-text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
 					Apple Developers Group (ADG) is a name synonymous
 					<br />
 					with excellence, simplicity and dedication. It is a
@@ -106,9 +103,9 @@
 				</div>
             </div>
             <div class="about-1">
-				<div class="about-head" data-aos="zoom-out-up"><b>OUR MISSION</b></div>
+				<div class="about-head" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><b>OUR MISSION</b></div>
 				<br /><br /><br />
-                <div class="about-text" data-aos="fade-up" data-aos-delay="1000" >
+                <div class="about-text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
                     Our mission is to provide a base for zealous students so
                     <br>
                     that they can nurture, grow and explore the dynamic world
@@ -127,9 +124,9 @@
 				</div>
 			</div>
 			<div class="about-1">
-				<div class="about-head" data-aos="zoom-out-up"><b>OUR VISION</b></div>
+				<div class="about-head" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><b>OUR VISION</b></div>
 				<br /><br /><br />
-				<div class="about-text" data-aos="fade-up" data-aos-delay="1000" >
+				<div class="about-text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
                     At ADG-VIT, our vision is to elevate the standards of
                     <br>
                     technical education and foster leadership qualities by 
@@ -151,6 +148,7 @@
 			</div>
 		</div>
 		<!-- About Ends -->
+		
 		<!-- Footer Start -->
 		<div class="footer" id="footer">
     		<div class="inner-footer">
@@ -159,13 +157,13 @@
             			<img class="logo-footer" src="Assets/Common-Assets/adglogo2.svg" style="height: auto; width: 150px; padding-right: 5%;">
 						<img class="logo-footer" src="Assets/Common-Assets/vitvlr.png" style="height: auto; width: 170px;">	
              				<p>
-								 <br>
+							  <br>
 							  Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. 
 							  It is a registered student community at VIT, Vellore established under the Apple University program. 
 							  A coterie of talented minds seeking not just success but perfection.
-             </p>
-        </div>
-    </div>
+             				</p>
+        			</div>
+				</div>
         <div class="footer-items">
             <div class="foot2">
                 <h1 class="headQL">Quick Links</h1>
@@ -185,6 +183,7 @@
 	
 	<div class="footer-items">
             		<div class="foot3">
+						<!-- <h1 class="headQL">Stay Connected</h1> -->
                         <div class="icons" id="icons">
 				                <a href="mailto: ios@vit.ac.in" target="_blank">
                                     <i class="fa fa-envelope"></i>
@@ -241,17 +240,9 @@
 		<script src="js/nav-script.js"></script>
 		<script src="js/preloader.js"></script>
 		<script src="js/foot-script.js"></script>
-		
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>   
-            AOS.init({
-                easing: 'ease-out-back',
-                duration: 800,
-                delay: 300,
-                once: false,
-                disable: 'mobile'
-            }); 
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
 		</script>
-		
 	</body>
 </html>
