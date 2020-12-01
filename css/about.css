@@ -1,11 +1,12 @@
 body{
 	overflow-x: hidden;
+	font-family: "sf_pro_displayregular";
 } 
 
 .about-content {
 	background-color: #1a1a1a;
 	width: 100%;
-	font-family: 'Poppins';
+	font-family: "sf_pro_displayregular";
 	padding-bottom: 6%;
 }
 
