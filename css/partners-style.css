@@ -45,8 +45,15 @@ body{
     text-align: center;
     letter-spacing: 0.06em;
 }
-
-
+.sponsors{
+    align-items: center;
+}
+.sponsors-icons{
+    width: auto;
+    height: 200px;
+    padding: 50px;
+    align-items: center;
+}
 @media screen and (min-width: 400px) and (max-width: 768px){
     .partners {
       display: block;
