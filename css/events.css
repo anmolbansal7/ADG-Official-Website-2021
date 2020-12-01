@@ -1,9 +1,9 @@
-body{
+html{
     background-color: #1a1a1a;
     font-family: "sf_pro_displayregular";
-}
-p.text{
     color: white;
+}
+.events-description{
     font-size: 16px;
     text-align: left;
 }
@@ -11,7 +11,6 @@ p.text{
     font-size: 48px;
     letter-spacing: 0.06em;
     text-align: left;
-    color: white;
 }
 .event-images{
 
