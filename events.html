@@ -4,11 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
 		<!-- Linking CSS -->
 		<link type="text/css" rel="stylesheet" href="css/nav-style.css" />
 		<link type="text/css" rel="stylesheet" href="css/foot-style.css" />
 		<link type="text/css" rel="stylesheet" href="css/preloader.css" />
 		<link type="text/css" rel="stylesheet" href="css/events.css" />
+		<link type="text/css" rel="stylesheet" href="css/events-new.css" />
 		<link type="text/css" rel="stylesheet" href="webfontkit-20201125-062530/stylesheet.css" />
 		
 		<!-- External Links -->
@@ -77,63 +79,67 @@
 		</nav>
 		<!--NAVBAR Ends-->
 
-<!-- Enter content in a div here -->
-<div>
 <!--Events Page-->
-        <div class="events-page">
-            <div class="iosfusion">
-                <div class="event-images">
-                    <img src="Assets/Events-Page/iosfusion1.png">
-                    <!--Image 2
-                    <img src="Assets/Events-Page/iosfusion2.png">
-                    -->
-                </div>
 
-                <div class="event-info">
-                    <h2 class="events-heading">iOS Fusion</h2>
-                    <p class="events-description">iOS Fusion is a premium workshop conducted by Apple Developers Group, VIT. Participants in our workshop are taught to create apps for iOS devices. 
-                    <br>
-                    It's great opportunity for the beginners as it gives them a chance to experience what it takes to be an iOS Developer.
-                    <br>
-                    A plethora of topics are taught and an overall insight about development process is provided.
-                    </p>
-                </div>
-            </div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-            <div class="unidev">
-                <div class="event-images">
-                    <img src="Assets/Events-Page/UniDev 1.png">
-                    <!--Image 2
-                    <img src="Assets/Events-Page/UniDev 2.png">
-                    -->
-                </div>
-                <div class="event-info">
-                    <h2 class="events-heading">UniDev</h2>
-                    <p class="events-description">UNIDEV, a one-day workshop for both novices and experts, 
-                        that gives a chance to explore tricks and tweaks of using 
-                        <br>
-                        Unity Software along with the powerful SDK Vuforia in order to build something as cool as Pokémon Go!
-                    </p>
-                </div>
-            </div>
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 3</div>
+	  <img src="Assets/Events-Page/iosfusion1.png" style="width:100%">
+	  <div class="text">
+		<h2 class="events-heading">iOS Fusion</h2>
+		<p class="events-description">
+			iOS Fusion is a premium workshop conducted by Apple Developers Group, VIT. Participants in our workshop are taught to create apps for iOS devices. 
+			<br>
+			It's great opportunity for the beginners as it gives them a chance to experience what it takes to be an iOS Developer.
+			<br>
+			A plethora of topics are taught and an overall insight about development process is provided.
+		</p>
+	  </div>
+	</div>
+  
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 3</div>
+	  <img src="Assets/Events-Page/UniDev 1.png" style="width:100%">
+	  <div class="text">
+		<h2 class="events-heading">UniDev</h2>
+		<p class="events-description">UNIDEV, a one-day workshop for both novices and experts, 
+			that gives a chance to explore tricks and tweaks of using 
+			<br>
+			Unity Software along with the powerful SDK Vuforia in order to build something as cool as Pokémon Go!
+		</p>
+	  </div>
+	</div>
+  
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 3</div>
+	  <img src="Assets/Events-Page/Hackgrid 1.png" style="width:100%">
+	  <div class="text">
+		<h2 class="events-heading">HackGrid</h2>
+		<p class="events-description">
+			Apple Developers Group conducts a 48 hour long hackathon that encourages young developers to come up with 
+			<br>
+			scintillating technical solutions to real world problems.
+		</p>
+	  </div>
+	</div>
+  
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+  </div>
 
-            <div class="hackgrid">
-                <div class="event-images">
-                    <img src="Assets/Events-Page/Hackgrid 1.png">
-                    <!--Image 2
-                    <img src="Assets/Events-Page/Hackgrid 2.png">
-                    -->
-                </div>
-                <div class="event-info">
-                    <h2 class="events-heading">HackGrid</h2>
-                    <p class="events-description">Apple Developers Group conducts a 48 hour long hackathon that encourages young developers to come up with 
-                        <br>
-                        scintillating technical solutions to real world problems.
-                    </p>
-                </div>
-            </div>
-        </div>
-		<!-- Put the content till here -->
+	<!-- Put the content till here -->
 
 		<!-- Footer Start -->
 		<div class="footer" id="footer">
@@ -167,8 +173,8 @@
             </div>
         </div>
 	
-	<div class="footer-items">
-            		<div class="foot3">
+		<div class="footer-items">
+            	<div class="foot3">
 						<!-- <h1 class="headQL">Stay Connected</h1> -->
                         <div class="icons" id="icons">
 				                <a href="mailto: ios@vit.ac.in" target="_blank">
@@ -224,6 +230,7 @@
 		
 		<!-- Linking JavaScript -->
 		<script src="js/nav-script.js"></script>
+		<script src="js/events.js"></script>
 		<script src="js/preloader.js"></script>
 		<script src="js/foot-script.js"></script>
 	</body>
