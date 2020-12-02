@@ -5,9 +5,35 @@
 	box-sizing: border-box;
 	font-family: "sf_pro_displayregular";
 }
+
 a {
 	margin-bottom: 3%;
 }
+
+img#light-abt{
+	display: none;
+}
+
+img#light-mode{
+	display: none;
+}
+
+img#light-mode1{
+	display: none;
+}
+
+img#light-mode2{
+	display: none;
+}
+
+img#light-mode3{
+	display: none;
+}
+
+img#light-mode4{
+	display: none;
+}
+
 
 .footer{
 	width: 100%;
@@ -57,6 +83,7 @@ p {
 	align-items: center;
 	text-align: center;
 	justify-content: center;
+	font-size: 16px;
 }
 /* .contact-form .contact-input {
 	background: #272727;
