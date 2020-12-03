@@ -26,13 +26,8 @@ nav.light-theme{
 img.adg-logo{
 	 width: 30px; 
 	 height: 30px; 
-	 margin-bottom: -1vh; 
-	 display: inline; 
+	 margin-bottom: -1vh;  
 }
-h4.logo-text{
-		text-decoration: none; 
-		display: inline;
-	}
 /* Nav Links */
 .navlinks {
 	display: flex;
