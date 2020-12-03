@@ -7,12 +7,12 @@ body {
 	overflow-x: hidden;
 }
 
-body.light-theme{
+body.light-theme {
 	background-color: #ffffff;
 	color: #000000;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 .text h1 {
@@ -42,11 +42,11 @@ a{
 	justify-content: center;
 	align-content: center;
 }
-p.description{
+p.description {
 	font-size: 120%;
 }
 
-.download-info{
+.download-info {
 	font-size: 120%;
 }
 .icon {
@@ -69,13 +69,13 @@ p.description{
 	}
 
 	.center {
-    text-align: center;
+		text-align: center;
 	}
 
 	.mobile1 {
 		display: block;
-    max-width: 30vh;
-    margin-top: 2vh;
+		max-width: 30vh;
+		margin-top: 2vh;
 	}
 
 	.row {
@@ -107,7 +107,7 @@ p.description{
 }
 
 @media screen and (min-width: 321px) and (max-width: 760px) {
-	.section{
+	.section {
 		height: auto;
 	}
 	.laptop {
@@ -120,8 +120,8 @@ p.description{
 
 	.mobile1 {
 		display: block;
-    max-width: 30vh;
-    margin-top: 5vh;
+		max-width: 30vh;
+		margin-top: 5vh;
 	}
 
 	.row {

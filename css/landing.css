@@ -1,5 +1,5 @@
-body{
-    overflow-x: hidden;
+body {
+	overflow-x: hidden;
 	background-color: #1a1a1a;
 	color: #ffffff;
 }
@@ -9,63 +9,65 @@ body.light-theme {
 	color: #000000;
 }
 
+.home-icon {
+	width: 375px;
+	height: 375px;
+	text-align: center;
+}
+.home-logo {
+	width: 400px;
+	height: 80px;
+	position: relative;
+	bottom: 70px;
+}
+#tagline {
+	position: relative;
+	bottom: 70px;
+	letter-spacing: 0.2em;
+}
+#about-button {
+	position: relative;
+	bottom: 70px;
+	margin-bottom: -10px;
+}
+.heading-home {
+	font-size: 96px;
+	font-family: "sf_pro_displayregular";
+	font-style: normal;
+	font-weight: bold;
+	line-height: 100px;
+	text-align: center;
+	letter-spacing: 0.06em;
+}
+.description-home {
+	font-family: "sf_pro_displayregular";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	/* color: #B9B9B9; */
+}
+.button-home {
+	width: 120px;
+	height: 40px;
+	font-size: 18px;
+	font-family: "sf_pro_displayregular";
+	letter-spacing: 0.06em;
+	background-color: #1784ff;
+	color: white;
+	border-radius: 8px;
+	cursor: pointer;
+	border: none;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
 
-.home-icon{
-    width: 375px;
-    height: 375px;
-    text-align: center;
-}
-.home-logo{
-    width: 400px;
-    height: 80px;
-    position: relative;
-    bottom: 70px;
-}
-#tagline{
-    position: relative;
-    bottom: 70px;
-    letter-spacing: 0.2em;
-}
-#about-button{
-    position: relative;
-    bottom: 70px;
-    margin-bottom: -10px;
-}
-.heading-home{
-    font-size: 96px;
-    font-family: "sf_pro_displayregular";
-    font-style: normal;
-    font-weight: bold;
-    line-height: 100px;
-    text-align: center;
-    letter-spacing: 0.06em;
-}
-.description-home{
-    font-family:"sf_pro_displayregular";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    /* color: #B9B9B9; */
-}
-.button-home{
-    width: 120px;
-    height: 40px;
-    font-size: 18px;
-    font-family: "sf_pro_displayregular";
-    letter-spacing: 0.06em;
-    background-color: #1784FF;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.about-home, .projects-home, .events-home, .team-home{
-    text-align: center;
-    margin-top: 20px;
+.about-home,
+.projects-home,
+.events-home,
+.team-home {
+	text-align: center;
+	margin-top: 20px;
 }

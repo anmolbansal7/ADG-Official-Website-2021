@@ -15,18 +15,18 @@ nav {
 	background-color: black;
 	color: #e5e5e5;
 }
-nav.light-theme{
+nav.light-theme {
 	/* color: #B7B4B4; */
-	background-color: #2F2F2F;
+	background-color: #2f2f2f;
 }
 .logo {
 	letter-spacing: 5px;
 	font-size: 22px;
 }
-img.adg-logo{
-	 width: 30px; 
-	 height: 30px; 
-	 margin-bottom: -1vh;  
+img.adg-logo {
+	width: 30px;
+	height: 30px;
+	margin-bottom: -1vh;
 }
 /* Nav Links */
 .navlinks {
@@ -103,7 +103,7 @@ img.adg-logo{
 		color: #e5e5e5;
 	}
 }
-	
+
 @media screen and (max-width: 678px) {
 	body,
 	html {
@@ -160,6 +160,3 @@ img.adg-logo{
 .toggle .line3 {
 	transform: rotate(45deg) translate(-5px, -6px);
 }
-
-
-

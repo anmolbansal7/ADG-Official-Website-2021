@@ -1,41 +1,42 @@
-html{
-    background-color: #1a1a1a;
-    font-family: "sf_pro_displayregular";
-    color: white;
+html {
+	background-color: #1a1a1a;
+	font-family: "sf_pro_displayregular";
+	color: white;
 }
-.events-description{
-    font-size: 16px;
-    text-align: left;
+.events-description {
+	font-size: 16px;
+	text-align: left;
 }
-.events-heading{
-    font-size: 48px;
-    letter-spacing: 0.06em;
-    text-align: left;
+.events-heading {
+	font-size: 48px;
+	letter-spacing: 0.06em;
+	text-align: left;
 }
-.event-images{
-
+.event-images {
 }
-img{
-    width: 100%;
-    height: auto;
+img {
+	width: 100%;
+	height: auto;
 }
-.iosfusion, .unidev, .hackgrid{
-    text-align: center;
-    display: inline-block;
+.iosfusion,
+.unidev,
+.hackgrid {
+	text-align: center;
+	display: inline-block;
 }
-.events-page{
-    overflow: auto;
-    white-space: nowrap;
+.events-page {
+	overflow: auto;
+	white-space: nowrap;
 }
-.event-info{
-    padding-right: 200px;
-    padding-left: 200px;
+.event-info {
+	padding-right: 200px;
+	padding-left: 200px;
 }
-.unidev{
-    position: relative;
-    bottom: 22px;
+.unidev {
+	position: relative;
+	bottom: 22px;
 }
-.hackgrid{
-    position: relative;
-    bottom: 24px;
+.hackgrid {
+	position: relative;
+	bottom: 24px;
 }
