@@ -111,3 +111,13 @@ html {
 		opacity: 1;
 	}
 }
+
+
+@media only screen and (min-width: 321px) and (max-width: 760px){
+	.events-heading{
+		font-size: 30px;
+	}
+	.events-description{
+		font-size: 12px;
+	}
+}
