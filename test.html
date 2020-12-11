@@ -8,32 +8,40 @@
 		<link type="text/css" rel="stylesheet" href="css/nav-style.css" />
 		<link type="text/css" rel="stylesheet" href="css/foot-style.css" />
 		<link type="text/css" rel="stylesheet" href="css/preloader.css" />
+		<link type="text/css" rel="stylesheet" href="css/landing.css" />
 		<link type="text/css" rel="stylesheet" href="webfontkit-20201125-062530/stylesheet.css" />
+		
 		<!-- External Links -->
-		<!-- Title and Logo-->
-		<title>ADG | VIT Vellore</title>
-		<!-- Favicon -->
-		<link rel="icon" type="image/png" href="Assets/Common-Assets/adglogo.png">
+		<!-- Mode Toggle Icons -->
+        <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
+		<!-- AOS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<!--Font Awesome-->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
+		
+		<!-- Title and Logo-->
+		<title>ADG | VIT Vellore</title>
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="Assets/Common-Assets/adglogo.png">
 	</head>
 
 	<body>
+
 		<div id="loader">
       		<img src="Assets/Common-Assets/adggif.gif" class="gif">
-
 		</div>
+
 		<div id="content">
 		<!--NAVBAR Starts-->
 		<nav class="nav-active" id="navbar">
 			<!-- Logo in Navbar -->
 				<div class="logo">
 					<a href="/" style="text-decoration: none; color: #e6e6e6">
-					<img src="Assets/Common-Assets/adglogo.png" class="adg-logo">
-					<h4 class="logo-text">ADG-VIT</h4>
+					<h4>
+						<img src="Assets/Common-Assets/adglogo.png" class="adg-logo"> ADG-VIT</h4>
 					</a>
 				</div>
 			<!-- Nav Links -->
@@ -69,25 +77,83 @@
 			</div>
 		</nav>
 		<!--NAVBAR Ends-->
-		
 
-		<!-- Put the content here -->
-		
-		<!--Landing Page-->
-		<div style="height: 200vh; background-color: #1a1a1a;">
+
+<!--Landing Page-->
+		<div>
+			<div class="about-home">
+				<img class="home-icon" src="Assets/Home-Page/Girl 1.png">
+				<br>
+				<img class="home-logo" src="Assets/Home-Page/adglogo1.svg">
+				<h3 class="description-home" id="tagline">Create | Ideate | Innovate</h3>
+				<button class="button-home" id="about-button" onclick="about">About Us</button>
+			</div>
+
+		<div class="block video-block">
+			<video class="video" id="myVideo" loop="loop" width="640" controls="controls">
+				<source src="adgintroo.mp4" type="video/mp4" /> 
+			  </video>
 		</div>
-		
-		<!-- Put the content till here -->
-		
 
+			<div class="projects-home">
+				<img class="home-icon" src="Assets/Home-Page/appstore.svg">
+				<h2 class="heading-home">Projects</h2>
+				<p class="description-home">Could you smell what we've been cooking</p>
+				<button class="button-home" onclick="projects">Projects</button>
+			</div>
+
+			<div class="events-home">
+				<img class="home-icon" src="Assets/Home-Page/calender.svg">
+				<h2 class="heading-home">Events</h2>
+				<p class="description-home">Check out our Events</p>
+				<button class="button-home" onclick="events">Events</button>
+			</div>
+
+			<div class="team-home">
+				<img class="home-icon" src="Assets/Home-Page/finder.svg">
+				<h2 class="heading-home">Team</h2>
+				<p class="description-home">People behind our genius</p>
+				<button class="button-home" onclick="team">Team</button>
+			</div>
+		</div>
+
+		
 		<!-- Footer Start -->
-		<div class="footer">
+		<div class="footer" id="footer">
     		<div class="inner-footer">
         		<div class="footer-items">
             		<div class="foot1">
-						<img class="logo-footer" src="Assets/Common-Assets/adglogo2.svg" style="height: auto; width: 150px; padding-right: 5%;">
-						<img class="logo-footer" src="Assets/Common-Assets/vitvlr.png" style="height: auto; width: 170px;">	
-                        <div class="icons">
+            			<img class="logo-footer" src="Assets/Common-Assets/adglogo2.svg" style="height: auto; width: 120px; padding-right: 5%;">
+						<img class="logo-footer" src="Assets/Common-Assets/vitvlr.png" style="height: auto; width: 150px;">	
+             				<p>
+							  <br>
+							  Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. 
+							  It is a registered student community at VIT, Vellore established under the Apple University program. 
+							  A coterie of talented minds seeking not just success but perfection.
+             				</p>
+        			</div>
+				</div>
+        <div class="footer-items">
+            <div class="foot2">
+                <h1 class="headQL">Quick Links</h1>
+                 <div class="border">
+                     <ul class="social qlinks">
+                         <a href="/"><li>Home</li></a>
+                         <a href="about"><li>About</li></a>
+                         <a href="partners"><li>Partners</li></a>
+                         <a href="events"><li>Events</li></a>
+                         <a href="projects"><li>Projects</li></a>
+                         <a href="team"><li>Team</li></a>
+                         <a href="contact"><li>Contact Us</li></a>
+                     </ul>
+                 </div>
+            </div>
+        </div>
+	
+	<div class="footer-items">
+            		<div class="foot3">
+						<!-- <h1 class="headQL">Stay Connected</h1> -->
+                        <div class="icons" id="icons">
 				                <a href="mailto: ios@vit.ac.in" target="_blank">
                                     <i class="fa fa-envelope"></i>
                                 </a>
@@ -107,47 +173,25 @@
                                 <a href="https://github.com/ADG-VIT" target="_blank">
                                     <i class="fa fa-github"></i>
                                 </a>
-			            </div>
-					</div>
-                </div>
-                <div class="footer-items">
-                 <div class="foot2">
-                 <h1 class="headQL">Quick Links</h1>
-                 <div class="border">
-                     <ul class="social qlinks">
-                         <a href="/"><li>Home</li></a>
-                         <a href="about"><li>About</li></a>
-                         <a href="partners"><li>Partners</li></a>
-                         <a href="events"><li>Events</li></a>
-                         <a href="projects"><li>Projects</li></a>
-                         <a href="team"><li>Team</li></a>
-                         <a href="contact"><li>Contact Us</li></a>
-					 </ul>
-
-					 <!-- Rounded switch -->
-                      <label class="switch">
-	                    <input type="checkbox">
-	                      <span class="slider round">
-                          </span>
-					   </label>
-                 </div>
-                 </div>
-                </div>
-                <div class="footer-items contact-form">
-							<h1 class="headQL">CONTACT US</h1>
-							<br>
-							<form action="#" method="" id="form">
-								<div class="inputBox">
-								<input type="text" name="" class="text-input contact-input" id="email" placeholder="Your email address" onkeydown="validation()">
-									<span id="text"></span>
-							</div>
-								<textarea class="text-input contact-input" name="message" placeholder="Your message" cols="19"></textarea>
-								<br>
-								<button type="submit" class="btn" style="margin-left: 90px;">Send<i class="fa fa-paper-plane" style="padding-left: 3px;" aria-hidden="true"></i></button>
-							</form>
 						</div>
-                    </div>
-                </div>
+						<div class="mode-toggle">
+						<label>
+							<input class='toggle-checkbox' type='checkbox' id="toggle"></input>
+								<div class='toggle-slot'>
+									<div class='sun-icon-wrapper'>
+									<div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+									</div>
+									<div class='toggle-button'></div>
+									<div class='moon-icon-wrapper'>
+									<div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+									</div>
+								</div>
+						</label>
+						</div>
+					</div>
+				</div>
+				
+    </div>
       <div class="copyright">
         <p>
           Copyright &copy;
@@ -160,30 +204,15 @@
     </div>
   <!-- End Footer -->
 </div>
+		
 		<!-- Linking JavaScript -->
 		<script src="js/nav-script.js"></script>
 		<script src="js/preloader.js"></script>
-		<script type="text/JavaScript">
-			function validation()
-			{
-				var form = document.getElementByID("form");
-				var email = document.getElementByID("email").value;
-				var text = document.getElementbyID("text");
-				var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-				if(email.match(pattern)){
-					form.classList.add("valid");
-					form.classList.remove("invalid");
-				}
-				else{
-					form.classList.remove("valid");
-					form.classList.add("invalid");
-				}
-				if(email == "")
-				{
-					form.classList.remove("valid");
-					form.classList.remove("invalid");
-				}
-			}
+		<script src="js/foot-script.js"></script>
+		<script src="test.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
 		</script>
-</body>
+	</body>
 </html>
