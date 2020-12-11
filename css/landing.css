@@ -38,6 +38,7 @@ body.light-theme {
 	line-height: 100px;
 	text-align: center;
 	letter-spacing: 0.06em;
+	margin-bottom: 5px;
 }
 .description-home {
 	font-family: "sf_pro_displayregular";
