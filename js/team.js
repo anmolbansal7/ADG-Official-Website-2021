@@ -24,17 +24,3 @@ toggleSwitch.addEventListener('click', function() {
 	}
 	console.log(toggleNumber)
 });
-
-
-
-/*function myFunc() {
-  var x = document.getElementById("team2");
-  var y = document.getElementById("team1");
-  if (x.style.display === "block" && y.style.display === "none") {
-    x.style.display = "none";
-    y.style.display = "block";
-  } else {
-    x.style.display = "block";
-    y.style.display = "none";
-  }
-}*/
