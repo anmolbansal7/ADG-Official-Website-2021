@@ -4,6 +4,15 @@ body {
   color: #ffffff;
 }
 
+body.light-theme {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+a.light-theme {
+    color: #000000;
+}
+
 /* 
 section{
     position: relative;
@@ -89,7 +98,7 @@ section::after{
 }
 
 .container .card .content .contentBx h3 {
-  color: #fff;
+  /* color: #fff; */
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
@@ -133,9 +142,11 @@ section::after{
   opacity: 1;
 }
 .container .card .sci li a {
-  color: #fff;
+  /* color: #fff; */
   font-size: 24px;
 }
+
+
 
 #switch {
   width: 260px;
@@ -190,12 +201,10 @@ section::after{
 
 #team1 {
   clip-path: inset(0 0 0 0);
-  transition: 3s cubic-bezier(0, 0, 0, 1);
   display: flex;
 }
 
 #team2 {
   clip-path: inset(0 0 0 0);
-  transition: 3s cubic-bezier(0, 0, 0, 1);
   display: none;
 }
