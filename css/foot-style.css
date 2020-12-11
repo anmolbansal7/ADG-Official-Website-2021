@@ -4,7 +4,6 @@
 	list-style: none;
 	box-sizing: border-box;
 	font-family: "sf_pro_displayregular";
-	transition: 0.5s;
 }
 
 a {
@@ -40,7 +39,7 @@ img#light-mode4 {
 	display: block;
 	background-color: #000000;
 	color: #e5e5e5;
-	
+	transition: 0.3s;
 }
 .footer.light-theme {
 	background-color: #2f2f2f;

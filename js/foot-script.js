@@ -54,3 +54,41 @@ toggle.addEventListener("input", (e) => {
 		// darkImgabt.style.display = "none";
 	}
 });
+
+
+//Persisting User's Choice
+
+const btn = document.getElementById("toggle");
+
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "light") {
+  body.classList.add("light-theme");
+}
+
+btn.addEventListener("click", function () {
+  body.classList.toggle("light-theme");
+
+  let theme = "dark";
+  if (document.body.classList.contains("light-theme")) {
+    theme = "light";
+  }
+  localStorage.setItem("theme", theme);
+});
+
+
+var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
+    $checkboxes = $("#toggle :checkbox");
+
+$checkboxes.on("change", function(){
+  $checkboxes.each(function(){
+    checkboxValues[this.id] = this.checked;
+  });
+  
+  localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
+});
+
+// On page load
+$.each(checkboxValues, function(key, value) {
+  $("#" + key).prop('checked', value);
+});
+

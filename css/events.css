@@ -47,11 +47,13 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-	max-width: 1000px;
+	max-width: 75vw;
+	max-height: 92vh;
 	position: relative;
 	margin: auto;
 	margin-top: 20px;
 }
+
 .slideshow-container img {
 	opacity: 30%;
 }

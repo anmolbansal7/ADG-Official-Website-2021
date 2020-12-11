@@ -2,6 +2,7 @@ body {
   overflow-x: hidden;
   background-color: #1a1a1a;
   color: #ffffff;
+  transition: 0.5s;
 }
 
 body.light-theme {
@@ -12,6 +13,7 @@ body.light-theme {
 a.light-theme {
     color: #000000;
 }
+
 
 /* 
 section{
@@ -70,7 +72,7 @@ section::after{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  opacity: 0.7;
+  opacity: 0.8;
   transition: 0.5s;
 }
 
@@ -201,10 +203,12 @@ section::after{
 
 #team1 {
   clip-path: inset(0 0 0 0);
+  transition: 0.5s cubic-bezier(0, 0, 0, 1);
   display: flex;
 }
 
 #team2 {
   clip-path: inset(0 0 0 0);
+  transition: 0.5s cubic-bezier(0, 0, 0, 1);
   display: none;
 }
