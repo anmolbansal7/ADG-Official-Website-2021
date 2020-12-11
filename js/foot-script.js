@@ -76,19 +76,29 @@ btn.addEventListener("click", function () {
 });
 
 
-var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
-    $checkboxes = $("#toggle :checkbox");
 
-$checkboxes.on("change", function(){
-  $checkboxes.each(function(){
-    checkboxValues[this.id] = this.checked;
+function App() {}
+
+App.prototype.setState = function(state) {
+  localStorage.setItem('checked', state);
+}
+
+App.prototype.getState = function() {
+  return localStorage.getItem('checked');
+}
+
+function init() {
+  var app = new App();
+  var state = app.getState();
+  var checkbox = document.querySelector('#toggle');
+
+  if (state == 'true') {
+    checkbox.checked = true;
+  }
+
+  checkbox.addEventListener('click', function() {
+      app.setState(checkbox.checked);
   });
-  
-  localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
-});
+}
 
-// On page load
-$.each(checkboxValues, function(key, value) {
-  $("#" + key).prop('checked', value);
-});
-
+init();
