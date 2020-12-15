@@ -82,12 +82,12 @@
     <div class="content">
 		<h2 class="contact-us">Contact Us</h2>
 		<div class="contact-form">
-			<form>
-				<input class="form-info" type="text" id="name" name="fname" placeholder="Name"><br>
-				<input class="form-info" type="text" id="email" name="email" placeholder="Email"><br>
-				<input class="form-info" type="text" id="phone" name="phone" placeholder="Phone"><br>
+			<form action="https://formspree.io/f/xyybnopp" method="POST">
+				<input class="form-info" type="text" id="name" name="name" placeholder="Name" required><br>
+				<input class="form-info" type="email" id="email" name="_replyto" placeholder="Email" required><br>
+				<input class="form-info" type="text" id="phone" name="phone" placeholder="Phone" required><br>
 				<input class="form-info" type="text" id="message" name="message" placeholder="We'd love to hear from you!" height="100" aria-colspan="10"><br>
-				<button>Send</button>
+				<input class="send-button" type="submit" value="Send">
 			</form>
 		</div>
 
