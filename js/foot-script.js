@@ -1,10 +1,10 @@
+// alert("Hello! I am an alert box!!");
+
 const toggle = document.getElementById("toggle");
 const body = document.body;
 const nav = document.getElementById("navbar");
 const foot = document.getElementById("footer");
-//About Page
-// var lightImgabt = document.getElementById("light-abt");
-// var darkImgabt = document.getElementById("dark-abt");
+
 //Partners Page
 const lightImg = document.getElementById("light-mode");
 const darkImg = document.getElementById("dark-mode");
@@ -16,6 +16,11 @@ const lightImg3 = document.getElementById("light-mode3");
 const darkImg3 = document.getElementById("dark-mode3");
 const lightImg4 = document.getElementById("light-mode4");
 const darkImg4 = document.getElementById("dark-mode4");
+
+//About Page
+const abtImgd = document.getElementById("dark1");
+const abtImgl = document.getElementById("light1");
+
 
 toggle.addEventListener("input", (e) => {
 	const isChecked = e.target.checked;
@@ -34,8 +39,9 @@ toggle.addEventListener("input", (e) => {
 		darkImg3.style.display = "none";
 		lightImg4.style.display = "inline";
 		darkImg4.style.display = "none";
-		// lightImgabt.style.display = "none";
-		// darkImgabt.style.display = "none";
+		abtImgd.style.display = "none";
+		abtImgl.style.display = "block";
+	
 	} else {
 		body.classList.remove("light-theme");
 		nav.classList.remove("light-theme");
@@ -50,8 +56,8 @@ toggle.addEventListener("input", (e) => {
 		darkImg3.style.display = "inline";
 		lightImg4.style.display = "none";
 		darkImg4.style.display = "inline";
-		// lightImgabt.style.display = "none";
-		// darkImgabt.style.display = "none";
+		abtImgd.style.display = "block";
+		abtImgl.style.display = "none";
 	}
 });
 

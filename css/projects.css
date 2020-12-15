@@ -5,6 +5,7 @@ body {
 	margin: 0;
 	font-family: "sf_pro_displayregular";
 	overflow-x: hidden;
+	transition: 0.5s;
 }
 
 body.light-theme {
