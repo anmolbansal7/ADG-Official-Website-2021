@@ -1,5 +1,5 @@
 body {
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	background-color: #1a1a1a;
 	color: #ffffff;
 	transition: 0.5s;
