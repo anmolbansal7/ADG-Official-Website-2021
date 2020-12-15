@@ -80,21 +80,23 @@
 
     <!-- Enter content in the div here -->
     <div class="content">
+		<div class="main1">
 		<h2 class="contact-us">Contact Us</h2>
-		<div class="contact-form">
+		<div class="contact-form" id="contact-form">
 			<form action="https://formspree.io/f/xyybnopp" method="POST">
 				<input class="form-info" type="text" id="name" name="name" placeholder="Name" required><br>
 				<input class="form-info" type="email" id="email" name="_replyto" placeholder="Email" required><br>
-				<input class="form-info" type="text" id="phone" name="phone" placeholder="Phone" required><br>
-				<input class="form-info" type="text" id="message" name="message" placeholder="We'd love to hear from you!" height="100" aria-colspan="10"><br>
-				<input class="send-button" type="submit" value="Send">
+				<input class="form-info" type="tel" id="phone" name="phone" placeholder="Phone" pattern="[0-9]{10}" required> <br>
+				<textarea id="message" name="message" placeholder="We'd love to hear from you!" rows="4" cols = "50"></textarea><br>
+				<button class="send-button" type="submit" value="Send" id="send"> Send <i class="fa fa-paper-plane" aria-hidden="true"></i> </button>
 			</form>
 		</div>
+	</div>
 
-		<br>
+		<div class="main2">
 		<h2 class="contact-heading">Contact Info</h2>
 		<br>
-		<div class="contact-info">
+		<div class="contact-info" id="contact-info">
 			<p>Address:
 			<br>
 			Vellore Institute Of Technology, Vellore 632014, Tamil Nadu</p>
@@ -112,7 +114,7 @@
 		<br>
 		<h2 class="contact-heading">More Info</h2>
 		<br>
-		<div class="more-info">
+		<div class="more-info" id="more-info">
 			<p>Apple Developers group is a group of inspired individuals who are committed to 
 				<br>
 				bring the best of technology to the next generation of programmers. 
@@ -120,6 +122,7 @@
 				Apple Developers group is affiliated to Apple University Program.
 			</p>
 		</div>
+	</div>
     </div>
 		
 		<!-- Footer Start -->
