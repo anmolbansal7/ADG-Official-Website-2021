@@ -95,6 +95,10 @@ textarea{
     width: 20%;
     align-items: left;
 }
+
+.send-button:hover{
+    cursor: pointer;
+}
 .contact-info, .more-info{
     background-color: #5a5a5a;
     text-align: center;
@@ -110,6 +114,11 @@ textarea{
 }
 .more-info{
     margin-bottom: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 @media only screen and (min-width: 321px) and (max-width: 760px){
