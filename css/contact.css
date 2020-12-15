@@ -4,7 +4,7 @@ html {
 	color: white;
 }
 .contact-us{
-    font-size: 48px;
+    font-size: 42px;
     font-weight: lighter;
     font-family: "sf_pro_displayregular";
     margin-top: 20px;
@@ -46,7 +46,7 @@ html {
     border: none;
     padding-left: 30px;
 }
-button{
+.send-button{
     background-color:rgb(85, 79, 79);
     border-radius: 10px;
     margin-left: 60%;
