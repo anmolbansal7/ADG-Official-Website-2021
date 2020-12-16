@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-family: ;
+    font-size: 10px;
+    box-sizing:border-box;
+    font-family: "sf_pro_displayregular";
+    background-color: #1a1a1a;
+}
+section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.container{
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.accordion-item{
+    background-color: grey;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0.5rem 2px 0.5rem rgba(0,0,0,0.1);
+}
+.accordion-link{
+    font-size: 1.6rem;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+ion-icon{
+    color: #e7d5ff;
+    padding: 0.5rem;
+}
+.remove{
+    display: none;
+}
+.answer{
+    overflow: hidden;
+    max-height: 0;
+    position: relative;
+    background-color: #1a1a1a;
+    transition: 650ms;
+    /* transition: max-height 650ms; */
+}
+.answer::before{
+    content: "";
+    position: absolute;
+    width: 0.6rem;
+    height: 90%;
+    background-color: white;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.answer p{
+    font-size: 1.4rem;
+    color: white;
+    padding: 2rem;
+}
+.accordion-item:target .answer{
+    height: 50rem;
+}
+.accordion-item:target .accordion-link .add{
+    display: none;
+}
+.accordion-item:target .accordion-link .remove{
+    display: block;
+}
