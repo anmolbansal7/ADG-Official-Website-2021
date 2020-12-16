@@ -74,3 +74,18 @@ body.light-theme {
     padding-top: 5%;
     height: 92vh;
 }
+
+.domain-page {
+	display: grid;
+	grid-template-columns: auto auto auto;
+
+  }
+  .domain {
+	padding: 30px;
+	font-size: 18px;
+	text-align: center;
+  }
+  .domain-icon{
+	width: 360px;
+	height: 300px;
+}
