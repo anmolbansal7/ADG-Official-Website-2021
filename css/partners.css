@@ -7,6 +7,7 @@ body {
 	font-family: "sf_pro_displayregular";
 	overflow-x: hidden;
 	color: #ffffff;
+	transition: 0.5s;
 }
 
 body.light-theme {

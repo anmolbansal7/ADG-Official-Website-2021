@@ -1,7 +1,8 @@
 body {
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	background-color: #1a1a1a;
 	color: #ffffff;
+	transition: 0.5s;
 }
 
 body.light-theme {
@@ -14,6 +15,8 @@ body.light-theme {
 	width: 100%;
 	/* font-family: "sf_pro_displayregular"; */
 	padding-bottom: 6%;
+	justify-content: center;
+	text-align: center;
 }
 
 .about-1 {
@@ -29,8 +32,8 @@ body.light-theme {
 	font-weight: 500;
 }
 
-img.adglogo {
-	display: block;
+img.abtlogo {
+	/* display: block; */
 	margin-left: auto;
 	margin-right: auto;
 	height: auto;
@@ -51,7 +54,7 @@ img.adglogo {
 		content: " ";
 	}
 
-	img.adglogo {
+	img.abtlogo {
 		width: 40%;
 		padding-top: 10%;
 		padding-bottom: 10%;

@@ -11,7 +11,7 @@
 		<link type="text/css" rel="stylesheet" href="css/contact.css" />
 		<link type="text/css" rel="stylesheet" href="css/faqs.css" />
 		<link type="text/css" rel="stylesheet" href="webfontkit-20201125-062530/stylesheet.css" />
-		
+
 		<!-- External Links -->
 		<!-- Mode Toggle Icons -->
         <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
@@ -22,7 +22,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
-		
+
 		<!-- Title and Logo-->
 		<title>ADG | VIT Vellore</title>
 		<!-- Favicon -->
@@ -69,7 +69,7 @@
 					<a href="contact" class="nav-link nav-link-grow-up" id="active">Contact Us</a>
 				</li>
 			</ul>
-			
+
 			<!-- Responsive Burger Menu -->
 			<div class="burger">
 				<div class="line1"></div>
@@ -81,20 +81,22 @@
 
     <!-- Enter content in the div here -->
     <div class="content">
+		<div class="main1">
 		<h2 class="contact-us">Contact Us</h2>
-		<div class="contact-form">
-			<form action="https://formspree.io/f/xyybnopp" method="POST">
+		<div class="contact-form" id="contact-form">
+			<form action="https://formspree.io/f/xbjpzwnb" method="POST">
 				<input class="form-info" type="text" id="name" name="name" placeholder="Name" required><br>
 				<input class="form-info" type="email" id="email" name="_replyto" placeholder="Email" required><br>
-				<input class="form-info" type="text" id="phone" name="phone" placeholder="Phone" required><br>
-				<input class="form-info" type="text" id="message" name="message" placeholder="We'd love to hear from you!" height="100" aria-colspan="10"><br>
-				<input class="send-button" type="submit" value="Send">
+				<input class="form-info" type="tel" id="phone" name="phone" placeholder="Phone" pattern="[0-9]{10}" required> <br>
+				<textarea id="message" name="message" placeholder="We'd love to hear from you!" rows="4" cols = "50"></textarea><br>
+				<button class="send-button" type="submit" value="Send" id="send"> Send <i class="fa fa-paper-plane" aria-hidden="true"></i> </button>
 			</form>
 		</div>
+	</div>
 
 		<h2 class="contact-heading">Contact Info</h2>
 		<br>
-		<div class="contact-info">
+		<div class="contact-info" id="contact-info">
 			<p>Address:
 			<br>
 			Vellore Institute Of Technology, Vellore 632014, Tamil Nadu</p>
@@ -102,20 +104,24 @@
 
 			<p>Phone Number:
 			<br>
-			+91 8447667487</p>
+			<a href="tel:+918447667487">
+			<i class="fa fa-link" aria-hidden="true"></i> +91 8447667487</p>
+			</a>
 			<br>
 
 			<p>E-Mail Address:
 			<br>
-			ios@vit.ac.in</p>
+			<a href="mailto: ios@vit.ac.in">
+			<i class="fa fa-link" aria-hidden="true"></i> ios@vit.ac.in</p>
+			</a>
 		</div>
 		<br>
 		<h2 class="contact-heading">More Info</h2>
 		<br>
-		<div class="more-info">
-			<p>Apple Developers group is a group of inspired individuals who are committed to 
+		<div class="more-info" id="more-info">
+			<p>Apple Developers group is a group of inspired individuals who are committed to
 				<br>
-				bring the best of technology to the next generation of programmers. 
+				bring the best of technology to the next generation of programmers.
 				<br>
 				Apple Developers group is affiliated to Apple University Program.
 			</p>
@@ -129,7 +135,7 @@
 			<div class="accordion">
 				<div class="accordion-item" id="#question1">
 					<a class="accordion-link" href="#question1">
-						What are the domains in ADG, is it only iOS Dev? 
+						What are the domains in ADG, is it only iOS Dev?
 						<ion-icon class="add" name="add-outline"></ion-icon>
 						<ion-icon class="remove" name="remove-outline"></ion-icon>
 					</a>
@@ -156,12 +162,12 @@
 					</a>
 					<div class="answer">
 					<p>
-						ADG usually conducts 2 events during both the technical and the cultural fests. 
-						One of these is the flagship event the "iOS Fusion" where one gets to learn specifically about Swift 
-						and its scope by getting some hands on practice during the workshop. 
-						The other event changes every year. 
+						ADG usually conducts 2 events during both the technical and the cultural fests.
+						One of these is the flagship event the "iOS Fusion" where one gets to learn specifically about Swift
+						and its scope by getting some hands on practice during the workshop.
+						The other event changes every year.
 						It usually explores new domains and open doors to the world of virtual or augmented reality and so on.
-						During the cultural fest the events conducted are a blend of innovation and tech. 
+						During the cultural fest the events conducted are a blend of innovation and tech.
 						A few events hosted in the past years include a treasure hunt and a meme making contest.
 						We also conduct a Hackathon, branded as Hackgrid, every year!! ADG has lots to offer.
 					</p>
@@ -176,8 +182,8 @@
 					</a>
 					<div class="answer">
 					<p>
-						The chapter offers a lot of growth in the learning sphere 
-						so one can explore different domains as mentioned above 
+						The chapter offers a lot of growth in the learning sphere
+						so one can explore different domains as mentioned above
 						and choose the ones they think are the best for them and build projects on them!
 					</p>
 					</div>
@@ -191,8 +197,8 @@
 					</a>
 					<div class="answer">
 					<p>
-						The tentative recruitment drive in at the start of every winter semester. 
-						Anything otherwise, shall be communicated through our social media platforms. 
+						The tentative recruitment drive in at the start of every winter semester.
+						Anything otherwise, shall be communicated through our social media platforms.
 						Hence, keep checking them.
 					</p>
 					</div>
@@ -200,13 +206,13 @@
 
 				<div class="accordion-item" id="#question5">
 					<a class="accordion-link" href="#question5">
-						Do I need Apple devices such as a MacBook to be a part this chapter?  
+						Do I need Apple devices such as a MacBook to be a part this chapter?
 						<ion-icon class="add" name="add-outline"></ion-icon>
 						<ion-icon class="remove" name="remove-outline"></ion-icon>
 					</a>
 					<div class="answer">
 					<p>
-						It's not at all necessary to have an apple device to be a part of ADG unless you need to be a part of iOS Domain, 
+						It's not at all necessary to have an apple device to be a part of ADG unless you need to be a part of iOS Domain,
 						for iOS App Development Macbook is compulsory.
 					</p>
 					</div>
@@ -220,10 +226,10 @@
 					</a>
 					<div class="answer">
 					<p>
-						If you want to be a part of the technical domains then yes, 
-						you need to have a decent technical knowledge when it comes to DSA 
+						If you want to be a part of the technical domains then yes,
+						you need to have a decent technical knowledge when it comes to DSA
 						(Don't get intimidated, practice what you know and you are good to go).
-						Moreover, we have 3 more domains apart from technical which are Management, Design and Video Editing. 
+						Moreover, we have 3 more domains apart from technical which are Management, Design and Video Editing.
 						So, if you are interested in either of those then you can definitely apply!
 					</p>
 					</div>
@@ -237,7 +243,7 @@
 					</a>
 					<div class="answer">
 					<p>
-						Yes, it's completely okay! 
+						Yes, it's completely okay!
 						All you need is enthusiasm to learn and you're good to go!
 					</p>
 					</div>
@@ -251,7 +257,7 @@
 					</a>
 					<div class="answer">
 					<p>
-						The recruitment preliminary round will be a Quiz, conducted on the ADG-VIT website (adgvit.com), 
+						The recruitment preliminary round will be a Quiz, conducted on the ADG-VIT website (adgvit.com),
 						qualified candidates will be contacted by ADG for further round(s) based on their Quiz score.
 					</p>
 					</div>
@@ -260,18 +266,18 @@
 		</div>
 	</section>
 
-		
+
 		<!-- Footer Start -->
 		<div class="footer" id="footer">
     		<div class="inner-footer">
         		<div class="footer-items">
             		<div class="foot1">
             			<img class="logo-footer" src="Assets/Common-Assets/adglogo2.svg" style="height: auto; width: 120px; padding-right: 5%;">
-						<img class="logo-footer" src="Assets/Common-Assets/vitvlr.png" style="height: auto; width: 150px;">	
+						<img class="logo-footer" src="Assets/Common-Assets/vitvlr.png" style="height: auto; width: 150px;">
              				<p>
 							  <br>
-							  Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication. 
-							  It is a registered student community at VIT, Vellore established under the Apple University program. 
+							  Apple Developers Group (ADG) is a name synonymous with excellence, simplicity and dedication.
+							  It is a registered student community at VIT, Vellore established under the Apple University program.
 							  A coterie of talented minds seeking not just success but perfection.
              				</p>
         			</div>
@@ -292,7 +298,7 @@
                  </div>
             </div>
         </div>
-	
+
 	<div class="footer-items">
             		<div class="foot3">
 						<!-- <h1 class="headQL">Stay Connected</h1> -->
@@ -333,7 +339,7 @@
 						</div>
 					</div>
 				</div>
-				
+
     </div>
       <div class="copyright">
         <p>
@@ -347,7 +353,7 @@
     </div>
   <!-- End Footer -->
 </div>
-		
+
 		<!-- Linking JavaScript -->
 		<script src="js/nav-script.js"></script>
 		<script src="js/preloader.js"></script>
