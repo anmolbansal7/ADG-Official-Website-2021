@@ -16,22 +16,45 @@ body.light-theme {
   margin-right: auto;
 }
 
-.home-icon {
-  width: 375px;
-  height: 375px;
-  /* text-align: center; */
+.home {
+  text-align: center;
+  height: 92vh;
+  padding: 2%;
+  margin-bottom: 7%;
+  float: center;
+  vertical-align: center;
+
 }
-.domain-icon {
-  width: 340px;
-  height: 340px;
-  /* text-align: ;*/
+
+.girl-icon {
+  width: 600px;
+  height: auto;
+  margin-top: -80px;
 }
+
 .home-logo {
   width: 400px;
   height: 80px;
   position: relative;
-  bottom: 70px;
+  bottom: 90px;
+  padding-top: 0%;
+  margin-top: -100px;
 }
+
+.home-icon {
+  width: 375px;
+  height: 375px;
+  /* text-align: center; */
+  margin-bottom: 0%;
+}
+
+.domain-icon {
+  width: 340px;
+  height: 340px;
+  /* text-align: ;*/
+  margin-bottom: 15px;
+}
+
 #tagline {
   position: relative;
   bottom: 70px;
@@ -43,14 +66,15 @@ body.light-theme {
   margin-bottom: -10px;
 }
 .heading-home {
-  font-size: 96px;
-  font-family: "sf_pro_displayregular";
-  font-style: normal;
+  font-size: 80px;
+  /* font-family: "sf_pro_displayregular"; */
+  /* font-style: normal; */
   font-weight: bold;
   line-height: 100px;
   /* text-align: center; */
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
   margin-bottom: 5px;
+  margin-top: -20px ;
 }
 .description-home {
   font-family: "sf_pro_displayregular";
@@ -85,14 +109,4 @@ body.light-theme {
 
 .button-home:focus {
   outline: none;
-}
-
-.about-home,
-.projects-home,
-.events-home,
-.team-home,
-.domain-home {
-  text-align: center;
-  margin-top: 20px;
-  height: 92vh;
 }
