@@ -15,8 +15,8 @@ body.light-theme {
 	text-align: center;
 }
 .domain-icon {
-	width: 340px;
-	height: 340px;
+	width: 400px;
+	height: 400px;
 	text-align: ;
 }
 .home-logo {
@@ -29,11 +29,6 @@ body.light-theme {
 	position: relative;
 	bottom: 70px;
 	letter-spacing: 0.2em;
-}
-#about-button {
-	position: relative;
-	bottom: 70px;
-	margin-bottom: -10px;
 }
 .heading-home {
 	font-size: 96px;
@@ -76,6 +71,6 @@ body.light-theme {
 .team-home, 
 .domain-home {
 	text-align: center;
-	margin-top: 20px;
-	height: 92vh;
+    padding-top: 5%;
+    height: 92vh;
 }

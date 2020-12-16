@@ -1,5 +1,5 @@
 body {
-	background-color: #1a1a1a;
+	background-color: #151515;
     color: white;
     transition: 0.5s;
 }
@@ -48,7 +48,7 @@ body.light-theme {
 .contact-form{
     background-color: black;
     border-radius: 20px;
-    width: 35%;
+    width: 125%;
     height: 500px;
     text-align: center;
     align-items: center;
@@ -56,6 +56,16 @@ body.light-theme {
     margin-left: 3%;
     overflow: hidden;
 }
+.contact1{
+    float: left;
+    margin-left: 2%;
+}
+
+.contact2{
+    float: right;
+    margin-top: -5%;
+}
+
 
 input:focus, textarea:focus, select:focus{
     outline: none;
@@ -135,5 +145,8 @@ a{
     }
     .contact-info{
         margin-bottom: 20px;
+    }
+    .contact2{
+        display:none;
     }
 }
