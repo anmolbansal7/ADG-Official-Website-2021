@@ -1,81 +1,98 @@
 body {
-	overflow-x: hidden;
-	background-color: #151515;
-	color: #ffffff;
+  overflow-x: hidden;
+  background-color: #151515;
+  color: #ffffff;
 }
 
 body.light-theme {
-	background-color: #ffffff;
-	color: #000000;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-wrapper-home {
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home-icon {
-	width: 375px;
-	height: 375px;
-	text-align: center;
+  width: 375px;
+  height: 375px;
+  /* text-align: center; */
 }
 .domain-icon {
-	width: 340px;
-	height: 340px;
-	text-align: ;
+  width: 340px;
+  height: 340px;
+  /* text-align: ;*/
 }
 .home-logo {
-	width: 400px;
-	height: 80px;
-	position: relative;
-	bottom: 70px;
+  width: 400px;
+  height: 80px;
+  position: relative;
+  bottom: 70px;
 }
 #tagline {
-	position: relative;
-	bottom: 70px;
-	letter-spacing: 0.2em;
+  position: relative;
+  bottom: 70px;
+  letter-spacing: 0.2em;
 }
 #about-button {
-	position: relative;
-	bottom: 70px;
-	margin-bottom: -10px;
+  position: relative;
+  bottom: 70px;
+  margin-bottom: -10px;
 }
 .heading-home {
-	font-size: 96px;
-	font-family: "sf_pro_displayregular";
-	font-style: normal;
-	font-weight: bold;
-	line-height: 100px;
-	text-align: center;
-	letter-spacing: 0.06em;
-	margin-bottom: 5px;
+  font-size: 96px;
+  font-family: "sf_pro_displayregular";
+  font-style: normal;
+  font-weight: bold;
+  line-height: 100px;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+  margin-bottom: 5px;
 }
 .description-home {
-	font-family: "sf_pro_displayregular";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 29px;
-	text-align: center;
-	letter-spacing: 0.06em;
-	/* color: #B9B9B9; */
+  font-family: "sf_pro_displayregular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+  /* color: #B9B9B9; */
 }
 .button-home {
-	width: 120px;
-	height: 40px;
-	font-size: 18px;
-	font-family: "sf_pro_displayregular";
-	letter-spacing: 0.06em;
-	background-color: #1784ff;
-	color: white;
-	border-radius: 8px;
-	cursor: pointer;
-	border: none;
-	margin-top: 30px;
-	margin-bottom: 50px;
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  font-family: "sf_pro_displayregular";
+  letter-spacing: 0.06em;
+  background-color: #1784ff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  opacity: 0.9;
+}
+
+.button-home:hover {
+  opacity: 1;
+  transition: 5ms;
+}
+
+.button-home:focus {
+  outline: none;
 }
 
 .about-home,
 .projects-home,
 .events-home,
-.team-home, 
+.team-home,
 .domain-home {
-	text-align: center;
-	margin-top: 20px;
-	height: 92vh;
+  text-align: center;
+  margin-top: 20px;
+  height: 92vh;
 }
