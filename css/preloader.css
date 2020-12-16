@@ -22,3 +22,25 @@ body {
 	margin-right: auto;
 	width: 10%;
 }
+
+
+@media screen and (max-width: 320px) {
+	#loader{
+		width: 900px;
+	}
+	.gif{
+		width: 800px;
+	}
+}
+  
+@media screen and (min-width: 321px) and (max-width: 760px) {
+	
+}
+  
+@media only screen and (min-width: 761px) and (max-width: 1224px) {
+
+}
+  
+
+
+
