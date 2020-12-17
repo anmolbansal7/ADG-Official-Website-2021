@@ -1,131 +1,93 @@
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 50%;
-    text-align: left;
-
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-  
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-
-  .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
-
-
-
-
-
-
-
-
-
-*,
-*::before,
-*::after{
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
-html{
-    font-family: ;
-    font-size: 10px;
-    box-sizing:border-box;
-    font-family: "sf_pro_displayregular";
-    background-color: #1a1a1a;
-}
-section{
-    width: 100%;
+.faq-page{
+    width: 45%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
 }
-.container{
+.wrapper{
     width: 100%;
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+    margin: 80px auto 0;
 }
-.accordion-item{
-    background-color: grey;
-    border-radius: 15px;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    box-shadow: 0.5rem 2px 0.5rem rgba(0,0,0,0.1);
-}
-.accordion-link{
-    font-size: 1.6rem;
-    color: rgba(255,255,255,0.8);
-    text-decoration: none;
-    background-color: grey;
+.accordion-header{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
-}
-ion-icon{
-    color: #e7d5ff;
-    padding: 0.5rem;
-}
-.remove{
-    display: none;
-}
-.answer{
-    overflow: hidden;
-    max-height: 0;
+    height: 50px;
+    background-color: white;
+    padding: 15px;
+    color: #39a098;
+    font-weight: 700;
+    border-bottom: 2px solid #39a098;
     position: relative;
-    background-color: #1a1a1a;
-    transition: 650ms;
-    /* transition: max-height 650ms; */
+    cursor: pointer;
 }
-.answer::before{
+.accordion-wrap:first-child .accordion-header{
+    border-top-left-radius:3px;
+    border-top-right-radius: 3px;
+}
+.accordion-wrap:last-child .accordion-header{
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius: 3px;
+    border-bottom: 2px solid transparent;
+}
+.accordion-header:hover{
+    color: #01645d;
+    border-color: #01645d;
+}
+.accordion-wrap .accordion-header:hover:before,
+.accordion-wrap .accordion-header:hover:after{
+    background-color: #01645d;
+}
+.accordion-wrap:last-child .accordion-header:hover{
+    border-bottom: 2px solid transparent;
+}
+.accordion-wrap .accordion-header::before,
+.accordion-wrap .accordion-header::after{
     content: "";
     position: absolute;
-    width: 0.6rem;
-    height: 90%;
-    background-color: white;
-    top: 50%;
-    left: 0;
     transform: translateY(-50%);
+    top: 50%;
+    right: 15px;
+    width: 20px;
+    height: 2px;
+    background-color: #39a098;
 }
-.answer p{
-    font-size: 1.4rem;
+.accordion-wrap .accordion-header::after{
+    transform: rotate(-90deg);
+    transition:  all 0.5s ease;
+}
+.accordion-body{
+    width: 100%;
+    height: 0px;
+    transition: all 0.5s ease;
+    background-color: #39a098;
+    overflow: hidden;
+}
+.accordion-body p{
+    padding-left: 15px;
+    font-size: 15px;
+    line-height: 22px;
     color: white;
-    padding: 2rem;
 }
-.accordion-item:target .answer{
-    height: 50rem;
+
+.accordion-header .active{
+    color: #01645d;
+    border-color: #01645d;
 }
-.accordion-item:target .accordion-link .add{
-    display: none;
+
+.accordion-wrap:last-child .accordion-header.active{
+    border-bottom: 2px solid #01645d;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
-.accordion-item:target .accordion-link .remove{
-    display: block;
+.accordion-wrap .accordion-header.active::before,
+.accordion-wrap .accordion-headera.active::after{
+    background-color: #01645d;
+}
+.accordion-header.active::after{
+    transform: rotate(0deg);
+}
+.accordion-header.active + .accordion-body{
+    height: 180px;
 }

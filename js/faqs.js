@@ -1,35 +1,36 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
+ $(document).ready(function(){
+   $('.accordion-content').hide();
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
+   $('#accordion-button-1').on('click', () => {
+     $('#accordion-content-1').toggle();
+     $('#up1')
+   });
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
+   $('#accordion-button-2').on('click', () => {
+    $('#accordion-content-2').toggle();
+  });                                       
+
+  $('#accordion-button-3').on('click', () => {
+    $('#accordion-content-3').toggle();
   });
-}
 
-
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
+  $('#accordion-button-4').on('click', () => {
+    $('#accordion-content-4').toggle();
   });
-}
+
+  $('#accordion-button-5').on('click', () => {
+    $('#accordion-content-5').toggle();
+  });
+
+  $('#accordion-button-6').on('click', () => {
+    $('#accordion-content-6').toggle();
+  });
+
+  $('#accordion-button-7').on('click', () => {
+    $('#accordion-content-7').toggle();
+  });
+
+  $('#accordion-button-8').on('click', () => {
+    $('#accordion-content-8').toggle();
+  });
+ })
