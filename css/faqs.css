@@ -3,24 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-family: "sf_pro_displayregular";
+}
+.faq-heading{
+    font-size: 48px;
+    padding-bottom: 20px;
+}
 .faq-page{
-    width: 45%;
-    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
 }
 .wrapper{
-    width: 100%;
-    margin: 80px auto 0;
+    width: 60%;
+    align-items: center;
+    display: inline-block;
 }
 .accordion-header{
     width: 100%;
-    height: 50px;
-    background-color: white;
-    padding: 15px;
-    color: #39a098;
-    font-weight: 700;
-    border-bottom: 2px solid #39a098;
+    height: 70px;
+    background-color: #1a1a1a;
+    padding: 25px;
+    color: white;
+    border-bottom: 2px solid white;
     position: relative;
     cursor: pointer;
+    align-items: center;
 }
 .accordion-wrap:first-child .accordion-header{
     border-top-left-radius:3px;
@@ -32,12 +41,12 @@
     border-bottom: 2px solid transparent;
 }
 .accordion-header:hover{
-    color: #01645d;
-    border-color: #01645d;
+    color:rgba(255,255,255,0.6);
+    border-color: rgba(255,255,255,0.6);
 }
 .accordion-wrap .accordion-header:hover:before,
 .accordion-wrap .accordion-header:hover:after{
-    background-color: #01645d;
+    background-color:rgba(255,255,255,0.6);
 }
 .accordion-wrap:last-child .accordion-header:hover{
     border-bottom: 2px solid transparent;
@@ -51,7 +60,7 @@
     right: 15px;
     width: 20px;
     height: 2px;
-    background-color: #39a098;
+    background-color: white;
 }
 .accordion-wrap .accordion-header::after{
     transform: rotate(-90deg);
@@ -61,7 +70,7 @@
     width: 100%;
     height: 0px;
     transition: all 0.5s ease;
-    background-color: #39a098;
+    background-color: #1a1a1a;
     overflow: hidden;
 }
 .accordion-body p{
@@ -72,22 +81,25 @@
 }
 
 .accordion-header .active{
-    color: #01645d;
-    border-color: #01645d;
+    color: white;
+    border-color: white;
 }
 
 .accordion-wrap:last-child .accordion-header.active{
-    border-bottom: 2px solid #01645d;
+    border-bottom: 2px solid white;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
 }
 .accordion-wrap .accordion-header.active::before,
 .accordion-wrap .accordion-headera.active::after{
-    background-color: #01645d;
+    background-color: white;
 }
 .accordion-header.active::after{
     transform: rotate(0deg);
 }
 .accordion-header.active + .accordion-body{
-    height: 180px;
+    height: 100px;
+}
+.accordion-header.active + #q2{
+    height: 200px;
 }
