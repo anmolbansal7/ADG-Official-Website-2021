@@ -1,9 +1,31 @@
-// pause when the user leaves this window/tab
-$(window).blur(function(){
-    $('#myvideo').get(0).pause();
-});
+$(document).ready(function(){
+    
+    //init scrollmagic
+    var controller = new ScrollMagic.Controller();
 
-// play when the user returns to this window/tab
-$(window).focus(function(){
-    $('#myvideo').get(0).play();
+    //pin the girl
+    var pinIntroScene = new ScrollMagic.Scene({
+        triggerElement: '#home-girl',
+        triggerHook: 0,
+        duration: '100%'
+    })
+
+    .setPin('#home-girl', {pushFollowers: false})
+    .addIndicators()
+    .addTo(controller);
+
+
+
+    //loop
+    $('.home').each(function(){
+        //build scene
+        var ourScene = new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.7
+        })
+
+        .setClassToggle(this, 'fade-in') // add class to home
+        .addIndicators()
+        .addTo(controller);
+    })
 });

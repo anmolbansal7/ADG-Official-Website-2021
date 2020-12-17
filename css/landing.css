@@ -16,6 +16,9 @@ body.light-theme {
   margin-right: auto;
 }
 
+.home-girl{
+  padding: 2%;
+}
 .home {
   text-align: center;
   height: 92vh;
@@ -191,7 +194,7 @@ body.light-theme {
 }
 
 @media only screen and (min-width: 761px) and (max-width: 1224px) {
-  .home {
+  /* .home {
     margin-bottom: -40%;
-  }
+  } */
 }

@@ -1,0 +1,10 @@
+.home{
+    opacity: 0.05;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+.home.fade-in{
+    opacity: 1;
+    transform: translateY(0);
+}
