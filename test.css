@@ -1,5 +1,5 @@
 .home{
-    opacity: 0.05;
+    opacity: 0;
     transform: translateY(50px);
     transition: all 1s ease-out;
 }
@@ -7,4 +7,24 @@
 .home.fade-in{
     opacity: 1;
     transform: translateY(0);
+}
+
+video{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* .home-girl{
+    opacity: 1;
+    transition: all 1s ease-out;
+}
+
+.home-girl.fade-out{
+    opacity: 1;
+} */
+
+
+#introVid{
+        cursor: alias;
 }

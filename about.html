@@ -34,7 +34,7 @@
 			$(document).ready(function(){
 				$(".accordion-header").click(function(){
 					$(".accordion-header").removeClass("active");
-					$(this).addClass("active");
+					$(this).toggleClass("active");
 				})
 			});
 		</script>
@@ -167,6 +167,7 @@
 		<div class="faq-page">
 		<h3 class="faq-heading">Frequently Asked Questions</h3>
     	<div class="wrapper">
+			<div class="faq1">
         <div class="accordion-wrap">
             <div class="accordion-header">
                 Q. What are the domains in ADG, is it only iOS Dev? 
@@ -225,7 +226,8 @@
 				</p>	
 			</div>
 		</div>
-		
+	</div>
+		<div class="faq2">
 		<div class="accordion-wrap">
             <div class="accordion-header">
                 Q. Do I need Apple devices such as a MacBook to be a part this chapter?  
@@ -271,7 +273,8 @@
                 <p>The recruitment preliminary round will be a Quiz, conducted on the ADG-VIT website (adgvit.com), <br>
 					qualified candidates will be contacted by ADG for further round(s) based on their Quiz score.</p>
             </div>
-        </div>
+		</div>
+	</div>
     </div>
 </div>
 		<!-- Footer Start -->
