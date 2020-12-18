@@ -2,6 +2,7 @@ body {
   overflow-x: hidden;
   background-color: #151515;
   color: #ffffff;
+  transition: 0.5s;
 }
 
 body.light-theme {
@@ -127,6 +128,40 @@ body.light-theme {
 
 .button-home:focus {
   outline: none;
+}
+
+.home{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+
+.home.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+video{
+  width: 100vw;
+  height: 100vh;
+}
+
+#video.back{
+  backdrop-filter: blur(10px);
+  background-color: black;
+  transition: 0.5s;
+}
+
+#introVid{
+      cursor: alias;
+}
+
+figcaption{
+  display: none;
+}
+#home04 :hover + figcaption{
+  opacity: 0.5;
+  display: block;
 }
 
 @media screen and (max-width: 320px) {

@@ -1,6 +1,6 @@
 var introVid = document.getElementById('introVid');
 
-$(document).ready(function(){
+// $(document).ready(function(){
     
     //init scrollmagic
     var controller = new ScrollMagic.Controller();
@@ -18,7 +18,16 @@ $(document).ready(function(){
 //     })
 //      .addTo(controller); 
 
-    //pin the girl
+
+
+(function(){
+    var width = window.innerWidth,
+    height = window.innerHeight;
+    console.log( width + ' : ' + height );
+
+    if (width >= 1024) {
+        
+        //pin the girl
     var pinIntroScene = new ScrollMagic.Scene({
         triggerElement: '#home-girl',
         triggerHook: 0,
@@ -40,17 +49,17 @@ $(document).ready(function(){
     })
 
     .setPin('#video')
+    .setClassToggle('#video', 'back')
     // .addIndicators({
-    //     name: 'video'
-    // })
+    //      name: 'video'
+    //  })
     .addTo(controller);
-
 
     //play pause video
     var controlVid = new ScrollMagic.Scene({
         triggerElement: '#introVid',
         duration: '50%',
-        triggerHook: 0
+        triggerHook: 0.1
     })
 
     .addTo(controller)
@@ -64,7 +73,76 @@ $(document).ready(function(){
 
     .on("leave", function(){
         introVid.pause();
+    })    
+
+} else if (width < 1024) {
+        //pin the girl
+    var pinIntroScene = new ScrollMagic.Scene({
+        triggerElement: '#home-girl',
+        triggerHook: 0,
+        duration: '100%'
     })
+    pinIntroScene = pinIntroScene.destroy(true);
+    // pinIntroScene = null;
+    // controller.destroy(true);
+    // controller = null;
+    // .setPin('#home-girl', {pushFollowers: false})
+    // .addIndicators({
+    //     name: 'girl',
+    //     colorTrigger: 'white'
+    // })
+    // .addTo(controller);
+
+    //pin the video div
+    var pinVideo = new ScrollMagic.Scene({
+        triggerElement: '#video',
+        triggerHook: 0,
+        duration: '100%'
+    })
+    pinVideo = pinVideo.destroy(true);
+    // pinVideo = null;
+    // controller.destroy(true);
+    // controller = null;
+    // .setPin('#video')
+    // .addIndicators({
+    //     name: 'video'
+    // })
+    //.addTo(controller);
+
+
+    //play pause video
+    var controlVid = new ScrollMagic.Scene({
+        triggerElement: '#introVid',
+        duration: '50%',
+        triggerHook: 0
+    })
+    //controlVid = controlVid.destroy(true);
+    // controlVid = null;
+    // controller.destroy(true);
+    // controller = null;
+    .addTo(controller)
+    // .addIndicators({
+    //     name: 'control'
+    //  })
+
+    .on("enter", function(){
+     introVid.play();
+    })
+
+    .on("leave", function(){
+     introVid.pause();
+    })
+
+    }
+
+}());
+
+
+
+
+
+
+
     
 
     //loop
@@ -80,7 +158,7 @@ $(document).ready(function(){
         // .addIndicators()
         .addTo(controller);
     })
-});
+// });
 
 
 // Control Video when Tab Changed
@@ -93,7 +171,18 @@ document.addEventListener("visibilitychange", function () {
     document.getElementById("introVid").play();
 });
 
-// Link Video to Domains Page
-$('#introVid').click(function(){
-    window.location = 'domains.html';
+
+    // Link Video to Domains Page
+    $('#introVid').click(function(){
+        window.location = 'domains.html';
+    });
+    
+
+
+    //refresh page on browser resize
+$(window).bind('resize', function(e)
+{
+  console.log('window resized..');
+  this.location.reload(false); /* false to get page from cache */
+  /* true to fetch page from server */
 });

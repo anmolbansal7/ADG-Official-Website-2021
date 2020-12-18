@@ -10,6 +10,16 @@ body.light-theme {
 	color: #000000;
 }
 
+ 
+/* #light1 {
+	display: none;
+} */
+
+#dark1{
+	display: block;
+}
+
+
 .about-content {
 	/* background-color: #1a1a1a; */
 	width: 100%;

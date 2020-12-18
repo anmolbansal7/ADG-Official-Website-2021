@@ -14,17 +14,14 @@ video{
     height: 100vh;
 }
 
-
-/* .home-girl{
-    opacity: 1;
-    transition: all 1s ease-out;
+#video.back{
+    backdrop-filter: blur(10px);
+    background-color: black;
+    transition: 0.5s;
 }
-
-.home-girl.fade-out{
-    opacity: 1;
-} */
-
 
 #introVid{
         cursor: alias;
 }
+
+

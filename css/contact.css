@@ -122,11 +122,12 @@ textarea{
 }
 .contact-info{
     margin-bottom: 50px;
+    transition: 0.1s;
 }
 .more-info{
     margin-bottom: 100px;
+    transition: 0.1s;
 }
-
 a{
     text-decoration: none;
     color: inherit;
