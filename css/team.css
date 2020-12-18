@@ -10,9 +10,16 @@ body.light-theme {
 	color: #000000;
 }
 
-a.light-theme {
-    color: #000000;
+body.light-theme .fa {
+  color: black;
 }
+
+body.light-theme #foot-icon {
+  color: #ffffff;
+}
+/* body.light-theme a {
+    color: #000000;
+} */
 
 
 /* 

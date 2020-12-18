@@ -25,7 +25,7 @@ var introVid = document.getElementById('introVid');
     height = window.innerHeight;
     console.log( width + ' : ' + height );
 
-    if (width >= 1024) {
+    if (width >= 1025) {
         
         //pin the girl
     var pinIntroScene = new ScrollMagic.Scene({

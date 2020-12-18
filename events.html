@@ -81,61 +81,65 @@
 
 <!--Events Page-->
 
-<!-- Slideshow container -->
-<div class="slideshow-container">
+<div class="main-wrapper">
+    <div class="row row1">
+      <div class="header" data-aos="fade-up" data-aos-duration="800">
+        <h2 class="heading">iOS Fusion</h2>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        <img
+          src="Assets/Events-Page/iosfusion1.png"
+          alt="People in a Gallery"
+          class="img"
+        />
+        <p class="txt">
+          iOS Fusion is a premium workshop conducted by Apple Developers
+          Group, VIT. Participants in our workshop are taught to create apps
+          for iOS devices. It's great opportunity for the beginners as it
+          gives them a chance to experience what it takes to be an iOS
+          Developer. A plethora of topics are taught and an overall insight
+          about development process is provided.
+        </p>
+      </div>
+    </div>
 
-	<!-- Full-width images with number and caption text -->
-	<div class="mySlides fade">
-	  <img src="Assets/Events-Page/iosfusion1.png" style="width:100%">
-	  <div class="text">
-		<h2 class="events-heading">iOS Fusion</h2>
-		<p class="events-description">
-			iOS Fusion is a premium workshop conducted by Apple Developers Group, VIT. Participants in our workshop are taught to create apps for iOS devices. 
-			<br>
-			It's great opportunity for the beginners as it gives them a chance to experience what it takes to be an iOS Developer.
-			<br>
-			A plethora of topics are taught and an overall insight about development process is provided.
-		</p>
-	  </div>
-	</div>
-  
-	<div class="mySlides fade">
-	  <img src="Assets/Events-Page/UniDev 1.png" style="width:100%">
-	  <div class="text">
-		<h2 class="events-heading">UniDev</h2>
-		<p class="events-description">UNIDEV, a one-day workshop for both novices and experts, 
-			that gives a chance to explore tricks and tweaks of using 
-			<br>
-			Unity Software along with the powerful SDK Vuforia in order to build something as cool as Pokémon Go!
-		</p>
-	  </div>
-	</div>
-  
-	<div class="mySlides fade">
-	  <img src="Assets/Events-Page/hackcs.png" style="width:100%">
-	  <div class="text">
-		<h2 class="events-heading">HackGrid</h2>
-		<p class="events-description">
-			Apple Developers Group conducts a 48 hour long hackathon that encourages young developers to come up with 
-			<br>
-			scintillating technical solutions to real world problems.
-		</p>
-	  </div>
-	</div>
-  
-	<!-- Next and previous buttons -->
-	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	<a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-	<span class="dot" onclick="currentSlide(1)"></span>
-	<span class="dot" onclick="currentSlide(2)"></span>
-	<span class="dot" onclick="currentSlide(3)"></span>
-  </div>
+    <div class="row">
+      <div class="header" data-aos="fade-up" data-aos-duration="800">
+        <h2 class="heading">UniDev</h2>
+      </div>
+      <div class="card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        <img
+          src="Assets/Events-Page/UniDev 1.png"
+          alt="People in a Gallery"
+          class="img"
+        />
+        <p class="txt">
+          UNIDEV, a one-day workshop for both novices and experts, that gives
+          a chance to explore tricks and tweaks of using Unity Software along
+          with the powerful SDK Vuforia in order to build something as cool as
+          Pokémon Go!
+        </p>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="header" data-aos="fade-up" data-aos-duration="800">
+        <h2 class="heading">HackGrid</h2>
+      </div>
+      <div class="card" style="margin-bottom: 5%;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        <img
+          src="Assets/Events-Page/hackcs.png"
+          alt="People in a Gallery"
+          class="img"
+        />
+        <p class="txt">
+          Apple Developers Group conducts a 48 hour long hackathon that
+          encourages young developers to come up with scintillating technical
+          solutions to real world problems.
+        </p>
+      </div>
+    </div>
+  </div>
 	<!-- Put the content till here -->
 
 		<!-- Footer Start -->
@@ -225,10 +229,26 @@
   <!-- End Footer -->
 </div>
 		
-		<!-- Linking JavaScript -->
+        <!-- Linking JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 		<script src="js/nav-script.js"></script>
-		<script src="js/events.js"></script>
 		<script src="js/preloader.js"></script>
-		<script src="js/foot-script.js"></script>
+        <script src="js/foot-script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+			AOS.init({
+        disable: function() {
+          var maxWidth = 1024;
+          return window.innerWidth < maxWidth;
+        }
+      });
+      //refresh page on browser resize
+    $(window).bind('resize', function(e)
+    {
+      console.log('window resized..');
+      this.location.reload(false); /* false to get page from cache */
+      /* true to fetch page from server */
+    });
+		</script>
 	</body>
 </html>

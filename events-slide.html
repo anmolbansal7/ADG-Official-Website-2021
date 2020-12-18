@@ -4,18 +4,19 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
 		<!-- Linking CSS -->
 		<link type="text/css" rel="stylesheet" href="css/nav-style.css" />
 		<link type="text/css" rel="stylesheet" href="css/foot-style.css" />
 		<link type="text/css" rel="stylesheet" href="css/preloader.css" />
-		<link type="text/css" rel="stylesheet" href="css/landing.css" />
+		<link type="text/css" rel="stylesheet" href="css/events.css" />
 		<link type="text/css" rel="stylesheet" href="webfontkit-20201125-062530/stylesheet.css" />
 		
 		<!-- External Links -->
 		<!-- Mode Toggle Icons -->
         <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
 		<!-- AOS -->
-		<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<!--Font Awesome-->
 		<link
 			rel="stylesheet"
@@ -47,7 +48,7 @@
 			<!-- Nav Links -->
 			<ul class="navlinks">
 				<li>
-					<a href="/" class="nav-link nav-link-grow-up" id="active">Home</a>
+					<a href="/" class="nav-link nav-link-grow-up">Home</a>
 				</li>
 				<li>
 					<a href="about" class="nav-link nav-link-grow-up">About</a>
@@ -56,7 +57,7 @@
 					<a href="partners" class="nav-link nav-link-grow-up">Partners</a>
 				</li>
 				<li>
-					<a href="events" class="nav-link nav-link-grow-up">Events</a>
+					<a href="events" class="nav-link nav-link-grow-up" id="active">Events</a>
 				</li>
 				<li>
 					<a href="projects" class="nav-link nav-link-grow-up">Projects</a>
@@ -78,68 +79,65 @@
 		</nav>
 		<!--NAVBAR Ends-->
 
+<!--Events Page-->
 
-<!--Landing Page-->
-		<div class="main-wrapper-home">
-			<div class="home-girl" id="home-girl">
-				<img class="girl-icon" src="Assets/Home-Page/girl.svg">
-				<br>
-				<img class="home-logo" id="homelogo" src="Assets/Home-Page/adglogo1.svg">
-				<!-- <img class="home-logo" src="Assets/Home-Page/adglogo4.png"> -->
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-				<h3 class="description-home" id="tagline">&nbsp;&nbsp;&nbsp;&nbsp;Create | Ideate | Innovate</h3>
-				<a href="about">
-				<button class="button-home" id="about-button" >About Us</button>
-				</a>
-			</div>
-			<div class="home-video" id="video">
-				<video class="video" id="introVid" loop="loop" controls="controls" controls muted>
-					<source src="Assets/Home-Page/adgintroo.mp4" type="video/mp4" /> 
-				  </video>
-			</div>
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+	  <img src="Assets/Events-Page/iosfusion1.png" style="width:100%">
+	  <div class="text">
+		<h2 class="events-heading">iOS Fusion</h2>
+		<p class="events-description">
+			iOS Fusion is a premium workshop conducted by Apple Developers Group, VIT. Participants in our workshop are taught to create apps for iOS devices. 
+			<br>
+			It's great opportunity for the beginners as it gives them a chance to experience what it takes to be an iOS Developer.
+			<br>
+			A plethora of topics are taught and an overall insight about development process is provided.
+		</p>
+	  </div>
+	</div>
+  
+	<div class="mySlides fade">
+	  <img src="Assets/Events-Page/UniDev 1.png" style="width:100%">
+	  <div class="text">
+		<h2 class="events-heading">UniDev</h2>
+		<p class="events-description">UNIDEV, a one-day workshop for both novices and experts, 
+			that gives a chance to explore tricks and tweaks of using 
+			<br>
+			Unity Software along with the powerful SDK Vuforia in order to build something as cool as Pokémon Go!
+		</p>
+	  </div>
+	</div>
+  
+	<div class="mySlides fade">
+	  <img src="Assets/Events-Page/hackcs.png" style="width:100%">
+	  <div class="text">
+		<h2 class="events-heading">HackGrid</h2>
+		<p class="events-description">
+			Apple Developers Group conducts a 48 hour long hackathon that encourages young developers to come up with 
+			<br>
+			scintillating technical solutions to real world problems.
+		</p>
+	  </div>
+	</div>
+  
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+  </div>
 
-			<div class="home" id="home01">
-				<img class="home-icon" src="Assets/Home-Page/appstore.svg">
-				<h2 class="heading-home">Projects</h2>
-				
-				<p class="description-home">Could you smell what we've been cooking</p>
-				<a href="projects">
-					<button class="button-home">Projects</button>
-				</a>
-			</div>
+	<!-- Put the content till here -->
 
-			<div class="home" id="home02">
-				<img class="home-icon" src="Assets/Home-Page/calender.svg">
-				<h2 class="heading-home">Events</h2>
-				<p class="description-home">Check out our Events</p>
-				<a href="events">
-					<button class="button-home">Events</button>
-				</a>
-			</div>
-
-			<div class="home" id="home03">
-				<img class="home-icon" src="Assets/Home-Page/finder.svg">
-				<h2 class="heading-home">Team</h2>
-				<p class="description-home">People behind our genius</p>
-				<a href="team">
-					<button class="button-home">Team</button>
-				</a>
-			</div>
-			
-			<div class="home" id="home04">
-				<img class="domain-icon" src="Assets/Home-Page/domains.svg">
-				<figcaption>Image from <a href="https://iconscout.com/" style="text-decoration: none; color: inherit;">iconscout.com</a></figcaption>
-				<!-- https://iconscout.com/icon/business-connection-links-sector-child-company-branch# -->
-				<h2 class="heading-home">Domains</h2>
-				<p class="description-home">Something for Everyone</p>
-				<a href="domains">
-				<button class="button-home">Domains</button>
-				</a>
-			</div>
-			
-		</div>
-
-		
 		<!-- Footer Start -->
 		<div class="footer" id="footer">
     		<div class="inner-footer">
@@ -172,8 +170,8 @@
             </div>
         </div>
 	
-	<div class="footer-items">
-            		<div class="foot3">
+		<div class="footer-items">
+            	<div class="foot3">
 						<!-- <h1 class="headQL">Stay Connected</h1> -->
                         <div class="icons" id="icons">
 				                <a href="mailto: ios@vit.ac.in" target="_blank">
@@ -228,18 +226,9 @@
 </div>
 		
 		<!-- Linking JavaScript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous"></script>
 		<script src="js/nav-script.js"></script>
+		<script src="js/events.js"></script>
 		<script src="js/preloader.js"></script>
 		<script src="js/foot-script.js"></script>
-		<script src="test.js"></script>
-		<script src="js/home.js"></script>
-		<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-		
-		<!-- <script>
-			AOS.init();
-		</script> -->
 	</body>
 </html>

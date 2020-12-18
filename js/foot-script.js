@@ -33,7 +33,6 @@ toggle.addEventListener("input", (e) => {
 		send.classList.add("light-theme");
 		contactInfo.classList.add("light-theme");
 		moreInfo.classList.add("light-theme");
-
 	
 	} else {
 		body.classList.remove("light-theme");
@@ -52,53 +51,3 @@ toggle.addEventListener("input", (e) => {
 		
 	}
 });
-
-
-//Persisting User's Choice
-
-// const btn = document.getElementById("toggle");
-
-// const currentTheme = localStorage.getItem("theme");
-// if (currentTheme == "light") {
-//   body.classList.add("light-theme");
-// }
-
-// btn.addEventListener("click", function () {
-//   body.classList.toggle("light-theme");
-
-//   let theme = "dark";
-//   if (document.body.classList.contains("light-theme")) {
-//     theme = "light";
-//   }
-//   localStorage.setItem("theme", theme);
-// });
-
-
-
-// function App() {}
-
-// App.prototype.setState = function(state) {
-//   localStorage.setItem('checked', state);
-// }
-
-// App.prototype.getState = function() {
-//   return localStorage.getItem('checked');
-// }
-
-// function init() {
-//   var app = new App();
-//   var state = app.getState();
-//   var checkbox = document.querySelector('#toggle');
-
-//   if (state == 'true') {
-//     checkbox.checked = true;
-//   }
-
-//   checkbox.addEventListener('click', function() {
-//       app.setState(checkbox.checked);
-//   });
-// }
-
-// init();
-
-
