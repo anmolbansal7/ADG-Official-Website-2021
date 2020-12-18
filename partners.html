@@ -95,7 +95,7 @@
 
     <div class="main-wrapper">
       <div class="partners">
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
           <a href="https://www.axure.com/" target="_blank">
             <img
               class="icon"
@@ -105,7 +105,7 @@
           </a>
         </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
           <a href="https://www.blockdegree.org/" target="_blank">
             <img
               class="icon"
@@ -122,7 +122,7 @@
           </a>
         </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
           <a href="https://www.bugsee.com/" target="_blank">
             <img
               class="icon"
@@ -132,7 +132,7 @@
           </a>
         </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
           <a href="https://challengerocket.com/" target="_blank">
             <img
               class="icon"
@@ -149,7 +149,7 @@
           </a>
         </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
           <a href="https://cloudsploit.com/" target="_blank">
             <img
               class="icon"
@@ -166,7 +166,7 @@
           </a>
         </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
           <a href="https://www.docker.com/" target="_blank">
             <img
               class="icon"
@@ -176,7 +176,7 @@
           </a>
         </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
           <a href="https://www.edtimes.in/" target="_blank">
             <img
               class="icon"
@@ -193,7 +193,7 @@
           </a>
         </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
           <a href="https://www.grabon.in/" target="_blank">
             <img
               class="icon"
@@ -203,7 +203,7 @@
           </a>
         </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
           <a href="https://interviewbuddy.in/" target="_blank">
             <img
               class="icon"
@@ -213,7 +213,7 @@
           </a>
         </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
           <a href="https://www.niit.com/" target="_blank">
             <img
               class="icon"
@@ -223,7 +223,7 @@
           </a>
         </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
           <a href="https://skillenza.com/" target="_blank">
             <img
               class="icon"
@@ -233,7 +233,7 @@
           </a>
         </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
           <a href="https://slack.com/intl/en-in/" target="_blank">
             <img
               class="icon"
@@ -250,7 +250,7 @@
           </a>
         </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
           <a href="https://www.thesouledstore.com/" target="_blank">
             <img
               class="icon"
@@ -260,7 +260,7 @@
           </a>
         </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
           <a href="https://www.taskade.com/" target="_blank">
             <img
               class="icon"
@@ -270,7 +270,7 @@
           </a>
         </div>
 
-        <div class="card" data-aos="zoom-in" data-aos-duration="800">
+        <div class="card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
           <a href="https://www.teeeclan.net/" target="_blank">
             <img
               class="icon"
@@ -371,12 +371,19 @@
 </div>
 		
 		<!-- Linking JavaScript -->
-		<script src="js/nav-script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="js/nav-script.js"></script>
 		<script src="js/preloader.js"></script>
 		<script src="js/foot-script.js"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="js/partners.js"></script>
 		<script>
-			AOS.init();
+			AOS.init({
+        disable: function() {
+          var maxWidth = 1024;
+          return window.innerWidth < maxWidth;
+        }
+      });
 		</script>
 	</body>
 </html>

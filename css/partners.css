@@ -81,7 +81,8 @@ body.light-theme {
 	margin: 5% 0;
 }
 
-@media only screen and (min-width: 321px) and (max-width: 760px) {
+
+/* @media only screen and (min-width: 321px) and (max-width: 760px) {
 	.icon {
 		max-width: 15rem;
 		max-height: 15rem;
@@ -115,4 +116,134 @@ body.light-theme {
 		width: 70%;
 		height: 70%;
 	}
-}
+} */
+
+
+@media only screen and (max-width: 320px) {
+	.icon {
+	  max-width: 15rem;
+	  max-height: 15rem;
+	}
+	.card {
+	  width: 100%;
+	}
+	.partners-icon {
+		float: center;
+		width: 100%;
+		padding-top: 5%;
+		padding-left: 0%;
+	}
+	.partners-info {
+		width: 100%;
+		align-content: center;
+		margin-right: 0px;
+	}
+	.partners-heading {
+		font-size: 50px;
+	}
+	.partners-text {
+		font-size: 18px;
+	}
+	.main {
+		display: block;
+	}
+	.hand-icon {
+		align-items: center;
+		width: 70%;
+		height: 70%;
+	}
+  }
+  
+  @media only screen and (min-width: 321px) and (max-width: 760px) {
+	.icon {
+	  max-width: 15rem;
+	  max-height: 15rem;
+	}
+	.card {
+	  width: 100%;
+	  margin: 20% 0;
+	}  
+
+	.partners-icon {
+		float: center;
+		width: 100%;
+		padding-top: 5%;
+		padding-left: 0%;
+	}
+	.partners-info {
+		width: 100%;
+		align-content: center;
+		margin-right: 0px;
+	}
+	.partners-heading {
+		font-size: 50px;
+	}
+	.partners-text {
+		font-size: 18px;
+	}
+	.main {
+		display: block;
+	}
+	.hand-icon {
+		align-items: center;
+		width: 70%;
+		height: 70%;
+	}
+  }
+  
+  @media only screen and (min-width: 761px) and (max-width: 1224px) {
+	.icon {
+	  max-width: 15rem;
+	  max-height: 15rem;
+	}
+	.card {
+	  width: 50%;
+	  margin: 8% 0;
+	}
+  
+	/* .partners-icon {
+		float: left;
+		width: 100%;
+		padding-top: 5%;
+		padding-left: 0%;
+	}
+	.partners-info {
+		width: 100%;
+		align-content: right;
+		margin-right: 0px;
+	}
+	.partners-heading {
+		font-size: 50px;
+		float: right;
+		padding: 2%;
+	}
+	.partners-text {
+		font-size: 18px;
+		float: right;
+	}
+	.main {
+		display: flex;
+	}
+	.hand-icon {
+		float: left;
+		width: 50%;
+		height: auto;
+		padding: 2%;
+	} */
+	.partners-icon{
+		padding: 5%;
+	}
+	.hand-icon{
+		padding: 0%;
+		float: left;
+		width: 350px;
+	}
+	.partners-heading{
+		font-size: 56px;
+		margin-left: 40px ;
+	}
+	.partners-text{
+		font-size: 20px;
+		margin-left: 30px ;
+	}
+  }
