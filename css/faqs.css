@@ -7,7 +7,6 @@ html{
     font-family: "sf_pro_displayregular";
 }
 
-
 .faq1{
     width: 45%;
     float: left;
@@ -17,10 +16,6 @@ html{
     width: 45%;
     float: right;
 }
-
-
-
-
 
 .faq-heading{
     font-size: 48px;
@@ -42,10 +37,10 @@ html{
     background-color: #1a1a1a;
     padding: 25px;
     color: white;
-    border-bottom: 2px solid white;
     position: relative;
     cursor: pointer;
     align-items: center;
+    margin-bottom: 20px;
 }
 .accordion-wrap:first-child .accordion-header{
     border-top-left-radius:3px;
