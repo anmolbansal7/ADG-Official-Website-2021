@@ -24,6 +24,7 @@ body.light-theme {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  height: 92vh;
 }
 
 .home {
@@ -37,9 +38,9 @@ body.light-theme {
 
 .home-video {
   text-align: center;
-  height: 100vh;
+  height: 92vh;
   width: 100%;
-  margin-bottom: 7%;
+  margin-bottom: 20%;
   float: center;
   vertical-align: center;
   z-index: 999;
