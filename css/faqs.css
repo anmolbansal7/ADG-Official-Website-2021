@@ -84,6 +84,7 @@ html{
     overflow: hidden;
 }
 .accordion-body p{
+    margin-top: -5px;
     padding-left: 15px;
     font-size: 15px;
     line-height: 22px;
@@ -98,7 +99,7 @@ html{
     border-bottom-left-radius: 0px;
 }
 .accordion-wrap .accordion-header.active::before,
-.accordion-wrap .accordion-headera.active::after{
+.accordion-wrap .accordion-header.active::after{
     background-color: white;
 }
 .accordion-header.active::after{
@@ -109,9 +110,6 @@ html{
 }
 .accordion-header.active + #q1{
     height: 150px;
-}
-.accordion-wrap{
-    margin-bottom: 20px;
 }
 @media screen and (max-width: 320px){
     .faq1, .faq2{
