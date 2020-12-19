@@ -4,7 +4,6 @@ body {
     transition: 0.5s;
 }
 
-
 body.light-theme {
 	background-color: #ffffff;
 	color: #000000;
@@ -13,8 +12,6 @@ body.light-theme {
 .contact-form.light-theme{
     background-color: #808080;
 }
-
-
 
 .form-info.light-theme, textarea.light-theme, .send-button.light-theme, .contact-info.light-theme, .more-info.light-theme{
     background-color: #C0C0C0;
@@ -28,7 +25,6 @@ body.light-theme {
 .main2{
     height: 92vh;
 }
-
 
 .contact-us{
     font-size: 40px;
@@ -63,9 +59,13 @@ body.light-theme {
 
 .contact2{
     float: right;
-    margin-top: -5%;
 }
-
+.contact2 img{
+    width: 65%;
+    float: right;
+    margin-top: -45%;
+    margin-right: 5%;
+}
 
 input:focus, textarea:focus, select:focus{
     outline: none;
@@ -133,13 +133,16 @@ a{
     color: inherit;
 }
 
-@media only screen and (min-width: 321px) and (max-width: 760px){
+
+
+@media screen and (max-width: 320px){
     .contact-us{
-        margin-left: 25%;
+        margin-left: 15%;
     }
     .contact-form{
-        width: 80%;
+        width: 90%;
         margin-left: 10%;
+        height: 400px;
     }
     .main2{
         margin-bottom: 10%;
@@ -147,7 +150,69 @@ a{
     .contact-info{
         margin-bottom: 20px;
     }
-    .contact2{
-        display:none;
+    .contact2 img{
+        margin-top: 10%;
+        margin-right: 15%;
+    }
+}
+@media only screen and (min-width: 321px) and (max-width: 500px){
+    .contact-form{
+        width: 90%;
+        height: 400px;
+    }
+    .contact2 img{
+        margin-top: 10%;
+        margin-right: 15%;
+    }
+}
+@media only screen and (min-width: 501px) and (max-width: 760px){
+    .contact-us{
+        margin-left: 15%;
+    }
+    .contact1{
+        width: 100%;
+    }
+    .contact-form{
+        width: 90%;
+        height: 550px;
+    }
+    .main2{
+        margin-bottom: 10%;
+    }
+    .contact-info{
+        margin-bottom: 20px;
+    }
+    .contact2 img{
+        margin-top: 10%;
+        margin-right: 15%;
+    }
+}
+
+@media only screen and (min-width: 761px) and (max-width: 850px){
+    .contact-us{
+        margin-left: 15%;
+    }
+    .contact1{
+        width: 100%;
+    }
+    .contact-form{
+        width: 90%;
+        height: 600px;
+        margin-left: 5%;
+    }
+    .main2{
+        margin-bottom: 10%;
+    }
+    .contact-info{
+        margin-bottom: 20px;
+    }
+    .contact2 img{
+        margin-top: -1%;
+        margin-right: 15%;
+    }
+}
+@media only screen and (min-width: 851px) and (max-width: 1224px){
+    .contact2 img{
+        width: 40%;
     }
 }
