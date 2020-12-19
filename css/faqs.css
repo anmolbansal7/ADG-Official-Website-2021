@@ -108,7 +108,7 @@ html{
     height: 100px;
 }
 .accordion-header.active + #q1{
-    height: 150px;
+    height: 180px;
 }
 @media screen and (max-width: 320px){
     .faq1, .faq2{
