@@ -7,9 +7,7 @@ body {
 	overflow-x: hidden;
 	transition: 0.5s;
 }
-html{
-	background-color: #151515;
-}
+
 body.light-theme {
 	background-color: #ffffff;
 	color: #000000;

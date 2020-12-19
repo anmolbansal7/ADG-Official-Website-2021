@@ -7,6 +7,24 @@ html{
     font-family: "sf_pro_displayregular";
 }
 
+body.light-theme .accordion-header{
+    background-color: #C4C4C4;
+}
+body.light-theme .accordion-header:hover{
+    color:rgba(0,0,0,0.6);
+    border-color: rgba(0, 0, 0, 0.6);
+}
+body.light-theme .accordion-wrap .accordion-header:hover:before,
+body.light-theme .accordion-wrap .accordion-header:hover:after{
+    background-color:rgba(0, 0, 0,0.6);
+}
+body.light-theme .accordion-wrap .accordion-header::before,
+body.light-theme .accordion-wrap .accordion-header::after{
+    background-color: rgb(0, 0, 0);
+}
+body.light-theme .accordion-body{
+    background-color: #C4C4C4;
+}
 .faq1{
     width: 45%;
     float: left;
@@ -35,7 +53,6 @@ html{
     height: 70px;
     background-color: #1a1a1a;
     padding: 25px;
-    color: white;
     position: relative;
     cursor: pointer;
     align-items: center;
@@ -87,11 +104,11 @@ html{
     padding-left: 15px;
     font-size: 15px;
     line-height: 22px;
-    color: white;
+    /* color: white; */
 }
 .accordion-header .active{
-    color: white;
-    border-color: white;
+    /* color: white;
+    border-color: white; */
 }
 .accordion-wrap:last-child .accordion-header.active{
     border-bottom-right-radius: 0px;
@@ -99,7 +116,7 @@ html{
 }
 .accordion-wrap .accordion-header.active::before,
 .accordion-wrap .accordion-header.active::after{
-    background-color: white;
+    /* background-color: white; */
 }
 .accordion-header.active::after{
     transform: rotate(0deg);
