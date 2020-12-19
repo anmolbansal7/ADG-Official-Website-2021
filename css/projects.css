@@ -47,7 +47,10 @@ a {
 p.description {
 	font-size: 120%;
 }
-
+.tap{
+	list-style-type: disc;
+	color: white;
+}
 .download-info {
 	font-size: 120%;
 }
@@ -98,9 +101,7 @@ h2{
 	margin-top: 20%;
 	margin-right: 10%;
 }
-.adg-external, .adg-internal{
-	background-color: #1a1a1a;
-}
+
 @media screen and (max-width: 320px) {
 	.laptop {
 		display: none;
