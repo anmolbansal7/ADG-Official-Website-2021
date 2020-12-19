@@ -97,7 +97,6 @@ html{
 }
 
 .accordion-wrap:last-child .accordion-header.active{
-
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
 }
@@ -111,6 +110,6 @@ html{
 .accordion-header.active + .accordion-body{
     height: 100px;
 }
-.accordion-header.active + #q2{
-    height: 200px;
+.accordion-header.active + #q1{
+    height: 150px;
 }
