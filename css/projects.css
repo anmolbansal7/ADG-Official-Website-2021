@@ -42,6 +42,7 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+	margin-right: 250px;
 }
 p.description {
 	font-size: 120%;
