@@ -7,7 +7,9 @@ body {
 	overflow-x: hidden;
 	transition: 0.5s;
 }
-
+html{
+	background-color: #151515;
+}
 body.light-theme {
 	background-color: #ffffff;
 	color: #000000;
@@ -90,8 +92,17 @@ h2{
 .internal-image img{
 	height: 600px;
 	width: auto;
+	float: left;
+	margin-top: -30%;
 }
-
+.internal-info{
+	float: right;
+	margin-top: 20%;
+	margin-right: 10%;
+}
+.adg-external, .adg-internal{
+	background-color: #1a1a1a;
+}
 @media screen and (max-width: 320px) {
 	.laptop {
 		display: none;
