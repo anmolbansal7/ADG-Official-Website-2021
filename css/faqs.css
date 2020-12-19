@@ -97,7 +97,7 @@ html{
 }
 
 .accordion-wrap:last-child .accordion-header.active{
-    border-bottom: 2px solid white;
+
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
 }
