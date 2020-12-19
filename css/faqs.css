@@ -48,6 +48,9 @@ body.light-theme .accordion-body{
     align-items: center;
     display: inline-block;
 }
+.accordion-wrap{
+    margin-bottom: 20px;
+}
 .accordion-header{
     width: 100%;
     height: 70px;
