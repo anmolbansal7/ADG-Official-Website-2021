@@ -42,7 +42,7 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
-	margin-right: 250px;
+	margin-right: 20%;
 }
 p.description {
 	font-size: 120%;
@@ -63,6 +63,33 @@ p.description {
 
 .mobile1 {
 	display: none;
+}
+h2{
+	font-size: 85px;
+}
+.tagline{
+	font-size: 28px;
+	letter-spacing: 2px;
+}
+.external-info{
+	float: left;
+	margin-top: 10%;
+	margin-left: 8%;
+}
+.adg{
+	list-style: disc;
+	color: white;
+}
+.external-image img{
+	height: 550px;
+	width: auto;
+	float: right;
+	width: 60%;
+	margin-top: -30%;
+}
+.internal-image img{
+	height: 600px;
+	width: auto;
 }
 
 @media screen and (max-width: 320px) {
@@ -96,6 +123,7 @@ p.description {
 		height: 80vh;
 		align-items: center;
 		justify-content: center;
+		margin: 0%;
 	}
 
 	.text h1 {
@@ -142,6 +170,7 @@ p.description {
 		height: 80vh;
 		align-items: center;
 		justify-content: center;
+		margin: 0%;
 	}
 
 	.text h1 {
@@ -197,6 +226,7 @@ p.description {
 		height: 80vh;
 		align-items: center;
 		justify-content: center;
+		margin: 0%;
 	}
 
 	.text h1 {
