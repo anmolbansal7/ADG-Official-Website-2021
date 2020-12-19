@@ -149,19 +149,19 @@ ul {
 	padding-inline-start: 0;
 }
 
-ul a {
+ul.social a {
 	text-decoration: none;
 	outline: none;
 	color: #e5e5e5;
 	transition: 0.3s;
 }
 
-ul li {
+ul.social li {
 	margin: 5px 0;
 	display: flex;
 	flex-wrap: wrap;
 }
-ul li:hover {
+ul.social li:hover {
 	color: white;
 	font-weight: 525;
 }
