@@ -40,7 +40,6 @@ html{
     position: relative;
     cursor: pointer;
     align-items: center;
-    margin-bottom: 20px;
 }
 .accordion-wrap:first-child .accordion-header{
     border-top-left-radius:3px;
@@ -90,12 +89,10 @@ html{
     line-height: 22px;
     color: white;
 }
-
 .accordion-header .active{
     color: white;
     border-color: white;
 }
-
 .accordion-wrap:last-child .accordion-header.active{
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -113,3 +110,28 @@ html{
 .accordion-header.active + #q1{
     height: 150px;
 }
+.accordion-wrap{
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 320px){
+    .faq1, .faq2{
+        width: 100%;
+    }
+    .faq-heading{
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+    .accordion-header.active + #q1{
+        height: 250px;
+    }
+    .accordion-header.active + .accordion-body{
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 760px) {
+    .faq1, .faq2{
+        width: 100%;
+    }
+}
+
