@@ -41,10 +41,10 @@ svg{
 
 svg #lower-wave{
 	animation: lwave 2s linear infinite alternate-reverse;
-	animation-play-state: paused;
-}
-svg:hover #lower-wave{
 	animation-play-state: running;
+}
+ svg:hover #lower-wave{
+	animation-play-state: paused;
 }
 
 @keyframes lwave {
@@ -60,10 +60,10 @@ svg:hover #lower-wave{
 
 svg #upper-wave{
 	animation: uwave 2s linear infinite alternate-reverse;
-	animation-play-state: paused;
+	animation-play-state: running;
 }
 svg:hover #upper-wave{
-	animation-play-state: running;
+	animation-play-state: paused;
 }
 
 @keyframes uwave {
