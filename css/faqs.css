@@ -116,16 +116,28 @@ body.light-theme .accordion-body{
         padding-bottom: 20px;
     }
     .accordion-header.active + #q1{
-        height: 250px;
+        height: 280px;
     }
     .accordion-header.active + .accordion-body{
-        height: 150px;
+        height: 170px;
+    }
+    .accordion-body p{
+        margin-top: 5%;
     }
 }
 
 @media screen and (min-width: 321px) and (max-width: 760px) {
     .faq1, .faq2{
         width: 100%;
+    }
+    .accordion-header.active + #q1{
+        height: 260px;
+    }
+    .accordion-header.active + .accordion-body{
+        height: 170px;
+    }
+    .accordion-body p{
+        margin-top: 5%;
     }
 }
 
