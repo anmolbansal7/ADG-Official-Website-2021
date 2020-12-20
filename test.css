@@ -194,8 +194,6 @@ ul.adge li::before {
     font-size: 18px;
 }
 
-
-
 @media screen and (max-width: 320px) {
 	.laptop {
 		display: none;
