@@ -29,7 +29,7 @@ body.light-theme {
 
 .home {
   text-align: center;
-  height: 92vh;
+  height: 90vh;
   padding: 2%;
   margin-bottom: 7%;
   float: center;
@@ -38,12 +38,13 @@ body.light-theme {
 
 .home-video {
   text-align: center;
-  height: 92vh;
+  height: 100vh;
   width: 100%;
   margin-bottom: 20%;
   float: center;
   vertical-align: center;
   z-index: 999;
+  padding-top: 4%;
 }
 
 .girl-icon {
@@ -142,15 +143,16 @@ body.light-theme {
   transform: translateY(0);
 }
 
+
 video{
-  width: 100vw;
-  height: auto;
+  width: auto;
+  height: 92vh;
 }
 
 #video.back{
   backdrop-filter: blur(10px);
   background-color: black;
-  transition: 0.5s;
+  transition: 0.1s;
 }
 
 #introVid{
