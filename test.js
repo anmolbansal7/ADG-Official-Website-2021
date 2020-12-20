@@ -150,7 +150,7 @@ var introVid = document.getElementById('introVid');
         //build scene
         var ourScene = new ScrollMagic.Scene({
             triggerElement: this,
-            triggerHook: 0.7,
+            triggerHook: 0.5,
             duration: '100%'
         })
 
