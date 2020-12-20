@@ -74,7 +74,10 @@ ul.tap-bullets li::before {
 	max-width: 40px;
 	margin-right: 2%;
 }
-
+.adge{
+    height: 92vh;
+    margin-bottom: 50vh;
+}
 
 .adge-text{
 	width: 50%;
@@ -121,7 +124,8 @@ ul.adge-bullets li::before {
 
 
 .adgi{
-	margin-top: -20%;
+    /* margin-top: -20%; */
+    height: 92vh;
 }
 .adgi-image img{
     width: 45%;
@@ -163,20 +167,43 @@ ul.adgi-bullets li::before {
     font-size: 18px;
 }
 
+.tap-image-mobile{
+    display: none;
+}
+.adge-image-mobile{
+    display: none;
+}
+.adgi-image-mobile{
+    display: none;
+}
+
 @media screen and (max-width: 320px){
-    body{
-        background-color: #151515;
-    }
     .tap{
         text-align: center;
         align-items: center;
+        margin-bottom: 10%;
     }
-    .tap-image img{
-        width: 100%;
+    .tap-image{
+        display: none;
+    }
+    .tap-image-mobile{
+        display: block;
+        margin-bottom: 20%;
+    }
+    ul.tap-bullets li::before{
+        display: none;
+    }
+    ul.tap-bullets{
+        float: center;
+        text-align: center;
+    }
+    #point1{
+        margin-left: 20%;
     }
     .tap-text{
         width: 100%;
         margin-top: -45%;
+        text-align: center;
     }
     h1.project-title {
         font-size: 48px;
@@ -195,18 +222,29 @@ ul.adgi-bullets li::before {
         display: none;
     }
     .adge-image-mobile{
-        display: contents;
-    }
-    .adge-image-mobile img{
-        width: 100%;
+        display: block;
+        text-align: center;
     }
     .adge-text{
-        width: 100%;
+        width: 80%;
         text-align: center;
         align-items: center;
     }
-    .adgi-image img{
-        width: 100%;
+    ul.adge-bullets li::before{
+        display: none;
+    }
+
+    #point2{
+        margin-left: 10%;
+    }
+    .adgi{
+        
+    }
+    .adgi-image{
+        display: none;
+    }
+    .adgi-image-mobile{
+        text-align: center;
     }
     .adgi-text{
         width: 100%;
@@ -214,9 +252,9 @@ ul.adgi-bullets li::before {
         align-items: center;
         margin: 0%;
     }
-    ul.tap-bullets{
+    /* ul.tap-bullets{
         list-style-type: none;
-    }
+    } */
 }
 @media screen and (min-width: 321px) and (max-width: 760px){
     body{
