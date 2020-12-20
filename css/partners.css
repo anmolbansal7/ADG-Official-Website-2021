@@ -39,8 +39,9 @@ body.light-theme {
 	width: 50%;
 	letter-spacing: 1px;
 	font-size: 24px;
-	margin-right: 250px;
+	margin-right: 200px;
 	float: right;
+	margin-left: 5%;
 }
 .partners-heading {
 	letter-spacing: 2px;
