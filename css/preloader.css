@@ -13,7 +13,7 @@ body {
 	overflow: visible;
 	/* background: #1a1a1a url('https://cssauthor.com/wp-content/uploads/2018/06/Bouncy-Preloader.gif') no-repeat center center; */
 	background-color: black;
-	padding-top: 35vh;
+	padding-top: 40vh;
 }
 
 .gif {
@@ -25,20 +25,21 @@ body {
 
 
 @media screen and (max-width: 320px) {
-	#loader{
-		width: 900px;
-	}
 	.gif{
-		width: 800px;
+		width: 30%;
 	}
 }
   
 @media screen and (min-width: 321px) and (max-width: 760px) {
-	
+	.gif{
+		width: 30%;
+	}
 }
   
 @media only screen and (min-width: 761px) and (max-width: 1224px) {
-
+	.gif{
+		width: 20%;
+	}
 }
   
 

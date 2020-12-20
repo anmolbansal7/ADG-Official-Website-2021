@@ -53,7 +53,7 @@ body.light-theme .accordion-body{
 .accordion-header{
     width: 100%;
     height: 70px;
-    background-color: #1a1a1a;
+    background-color: #151515;
     padding: 25px;
     position: relative;
     cursor: pointer;
@@ -63,7 +63,7 @@ body.light-theme .accordion-body{
     width: 100%;
     height: 0px;
     transition: all 0.5s ease;
-    background-color: #1a1a1a;
+    background-color: #151515;
     overflow: hidden;
 }
 .accordion-body p{

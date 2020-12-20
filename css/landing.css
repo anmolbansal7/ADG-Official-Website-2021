@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  background-color: #151515;
+  background-color: #1a1a1a;
   color: #ffffff;
   transition: 0.5s;
 }
@@ -149,6 +149,9 @@ video{
   height: 92vh;
 }
 
+video:focus{
+  outline: none;
+}
 #video.back{
   backdrop-filter: blur(10px);
   background-color: black;
