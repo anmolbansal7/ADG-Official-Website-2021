@@ -8,14 +8,14 @@
 		<link type="text/css" rel="stylesheet" href="css/nav-style.css" />
 		<link type="text/css" rel="stylesheet" href="css/foot-style.css" />
 		<link type="text/css" rel="stylesheet" href="css/preloader.css" />
-		<link type="text/css" rel="stylesheet" href="test.css" />
+		<link type="text/css" rel="stylesheet" href="css/projects.css" />
 		<link type="text/css" rel="stylesheet" href="webfontkit-20201125-062530/stylesheet.css" />
 		
 		<!-- External Links -->
 		<!-- Mode Toggle Icons -->
         <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
 		<!-- AOS -->
-		<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<!--Font Awesome-->
 		<link
 			rel="stylesheet"
@@ -360,10 +360,22 @@
 		<script src="js/nav-script.js"></script>
 		<script src="js/preloader.js"></script>
 		<script src="js/foot-script.js"></script>
-		<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		
-		<!-- <script>
-			AOS.init();
-		</script> -->
+		<script>
+			AOS.init({
+        disable: function() {
+          var maxWidth = 1024;
+          return window.innerWidth < maxWidth;
+        }
+      });
+      //refresh page on browser resize
+    $(window).bind('resize', function(e)
+    {
+      console.log('window resized..');
+      this.location.reload(false); /* false to get page from cache */
+      /* true to fetch page from server */
+    });
+		</script>
 	</body>
 </html>
