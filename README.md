@@ -1,6 +1,6 @@
 # ADG-Official-Website-2021
 
-### This is the official website for [ADG-VIT](https://github.com/ADG-VIT) for the Year 2021
+### This is the official website of [ADG-VIT](https://github.com/ADG-VIT) for the Year 2021
 
 ## Technologies used 🛠:
 1. HTML-5
