@@ -11,6 +11,12 @@ body.light-theme {
 	background-color: #ffffff;
 	color: #000000;
 }
+a {
+	text-decoration: none;
+}
+.adge-image-mobile{
+    display: none;
+}
 .tap-image img{
 	width: 50%;
 	float: left;
@@ -26,6 +32,12 @@ h1.project-title {
     font-size: 85px;
     font-weight: 1000;
 	letter-spacing: 6px;
+}
+.adgi-text h2{
+    font-size: 80px;
+    font-weight: 1000;
+    letter-spacing: 6px;
+    line-height: 80px;
 }
 p.project-sub{
 	margin-top: -20px;
@@ -64,9 +76,6 @@ ul.tap-bullets li::before {
 }
 
 
-.adge{
-	
-}
 .adge-text{
 	width: 50%;
 	margin: 10%;
@@ -115,12 +124,14 @@ ul.adge-bullets li::before {
 	margin-top: -20%;
 }
 .adgi-image img{
-	width: 50%;
+    width: 45%;
+    margin-top: 10%;
 }
 .adgi-text{
-	float: right;
-	margin-top: -35%;
-	margin-right: 100px;
+    float: right;
+    width: 48%;
+	margin-top: -30%;
+	margin-right: 150px;
 }
 .adgi p.project-sub{
     font-size: 24px;
@@ -150,4 +161,143 @@ ul.adgi-bullets li::before {
     width: 1em;
     margin-left: -1em;
     font-size: 18px;
+}
+
+@media screen and (max-width: 320px){
+    body{
+        background-color: #151515;
+    }
+    .tap{
+        text-align: center;
+        align-items: center;
+    }
+    .tap-image img{
+        width: 100%;
+    }
+    .tap-text{
+        width: 100%;
+        margin-top: -45%;
+    }
+    h1.project-title {
+        font-size: 48px;
+        font-weight: 1000;
+        letter-spacing: 6px;
+        text-align: center;
+        align-items: center;
+    }
+    .adgi-text h2{
+        font-size: 30px;
+        font-weight: 1000;
+        letter-spacing: 6px;
+        line-height: 80px;
+    }
+    .adge-image{
+        display: none;
+    }
+    .adge-image-mobile{
+        display: contents;
+    }
+    .adge-image-mobile img{
+        width: 100%;
+    }
+    .adge-text{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .adgi-image img{
+        width: 100%;
+    }
+    .adgi-text{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin: 0%;
+    }
+    ul.tap-bullets{
+        list-style-type: none;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 760px){
+    body{
+        background-color: #151515;
+    }
+    .tap{
+        text-align: center;
+        align-items: center;
+    }
+    .tap-image img{
+        width: 100%;
+        margin-top: -3%;
+    }
+    .tap-text{
+        width: 100%;
+        margin-top: -30%;
+        text-align: center;
+        align-items: center;
+    }
+    .tap-bullets{
+        text-align: center;
+        align-items: center;
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+    h1.project-title {
+        font-size: 60px;
+        font-weight: 1000;
+        letter-spacing: 6px;
+    }
+    .adgi-text h2{
+        font-size: 60px;
+        font-weight: 1000;
+        letter-spacing: 6px;
+        line-height: 80px;
+    }
+    .adge-image{
+        display: none;
+    }
+    .adge-image-mobile{  
+        display: contents;
+    }
+    .adge-image-mobile img{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .adge-text{
+        width: 100%;
+    }
+    .adgi-image img{
+        width: 100%;
+    }
+    .adgi-text{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin: 0%;
+    }
+    ul.tap-bullets{
+        list-style-type: none;
+    }
+}
+@media only screen and (min-width: 761px) and (max-width: 1224px){
+    .tap-text{
+        margin-top: -60%;
+    }
+    .tap-image img{
+        width: 70%;
+        margin-left: -10%;
+    }
+    .adge-image img{
+        width: 80%;
+    }
+    .adgi-image img{
+        width: 70%;
+        margin-left: -10%;
+    }
+    .adgi-text{
+        margin-left: 40%;
+        margin-top: -50%;
+        width: 40%;
+    }
 }
