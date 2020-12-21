@@ -228,11 +228,10 @@ ul.adge li::before {
 
         display: none;
     }
-    #tap1{
+    /* #tap1{
         margin-left: 15%;
-    }
+    } */
     ul.adgi li::before{
-
         display: none;
     }
     #adgi-title{
@@ -248,6 +247,36 @@ ul.adge li::before {
     .text-adg{
         width: 90vw;
         text-align: center;
+    }
+    .adgi-desc{
+        text-align: center;
+        width: 100%;
+        margin-right: 30vw;
+    }
+    .adge-desc{
+        text-align: center;
+        width: 100%;
+        margin-right: 20vw;
+    }
+    .tap-desc{
+        text-align: center;
+        width: 100%;
+        margin-right: 20vw;
+    }
+    .adge-1{
+        margin-left: 18%;
+    }
+    .tap-1{
+        margin-left: 20%;
+    }
+    ul.adgi{
+        margin-left: 0;
+    }
+    ul.adge{
+        margin-left: 0;
+    }
+    ul.tap{
+        margin-left: 0;
     }
 }
 
@@ -284,9 +313,9 @@ ul.adge li::before {
     ul.tap li::before{
         display: none;
     }
-    #tap1{
+    /* #tap1{
         margin-left: 20%;
-    }
+    } */
     ul.adgi li::before{
 
         display: none;
@@ -324,6 +353,36 @@ ul.adge li::before {
         align-items: center;
         text-align: center;
     }
+    .adgi-desc{
+        text-align: center;
+        width: 100%;
+        margin-right: 30vw;
+    }
+    .adge-desc{
+        text-align: center;
+        width: 100%;
+        margin-right: 20vw;
+    }
+    .tap-desc{
+        text-align: center;
+        width: 100%;
+        margin-right: 20vw;
+    }
+    .adge-1{
+        margin-left: 25%;
+    }
+    .tap-1{
+        margin-left: 25%;
+    }
+    ul.adgi{
+        margin-left: 0;
+    }
+    ul.adge{
+        margin-left: 0;
+    }
+    ul.tap{
+        margin-left: 0;
+    }
 }
 
 @media only screen and (min-width: 761px) and (max-width: 1224px) {
@@ -357,33 +416,23 @@ ul.adge li::before {
         margin-top: 0%;
         align-content: center;
         justify-content: center;
+        align-items: center;
 	}
     ul.tap li::before{
         display: none;
     }
-    #tap-title{
-        /* margin-top: -30%; */
-    }
-    #tap1{
-        margin-left: 15%;
-    }
     ul.adgi li::before{
-
         display: none;
     }
-    #adgi-title{
-        /* font-size: 50px; */
-        /* margin-top: -40%; */
-    }
-    /* #adge-title{
-        font-size: 50px;
-    } */
     ul.adge li::before{
         display: none;
     }
     .text-adg{
         width: 90vw;
         text-align: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
     ul.tap{
         padding-left: 25%;
@@ -391,13 +440,8 @@ ul.adge li::before {
         padding-top: 0px;
     }
     ul.adge{
-        padding-left: 28%;
+        padding-left: 35%;
         margin-top: 0%;
-        padding-top: 0px;
-    }
-    ul.adgi{
-        padding-left: 25%;
-        /* margin-top: -20%; */
         padding-top: 0px;
     }
     #adge1{
@@ -411,5 +455,34 @@ ul.adge li::before {
     }
     #adgi-image-mobile{
         margin-top: 30%;
+    }
+    .adgi-desc{
+        width: 50%;
+        text-align: center;
+    }
+    .adge-desc{
+        text-align: center;
+        width: 60%;
+        margin-right: 20vw;
+    }
+    .tap-desc{
+        text-align: center;
+        width: 70%;
+        margin-right: 20vw;
+    }
+    .adge-1{
+        margin-left: 18%;
+    }
+    .tap-1{
+        margin-left: 22%;
+    }
+    ul.adgi{
+        margin-left: 0;
+    }
+    ul.adge{
+        margin-left: 0;
+    }
+    ul.tap{
+        margin-left: 7%;
     }
 }
