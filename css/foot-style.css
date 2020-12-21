@@ -441,6 +441,9 @@ input:checked + .slider:before {
 		padding: 0;
 		margin-left: 0;
 	}
+	.icons{
+		margin-top: 15%;
+	}
 }
 /* @media screen (min-width: 321px) and (max-width: 760px) {
 	.social-media ul {
@@ -504,5 +507,8 @@ input:checked + .slider:before {
 	}
 	.border{
 		padding: 0;
+	}
+	.icons{
+		margin-top: -5%;
 	}
 }
