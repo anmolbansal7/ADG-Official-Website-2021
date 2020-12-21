@@ -271,6 +271,7 @@ input:checked + .slider:before {
 .icons {
 	text-align: center;
 	padding-top: 8%;
+	margin-top: 15%;
 }
 
 .icons i {
