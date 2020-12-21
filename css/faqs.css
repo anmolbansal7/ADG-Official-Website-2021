@@ -125,8 +125,7 @@ body.light-theme .accordion-body{
     }
     .accordion-header{
         height: 100px;
-        text-align: center;
-        align-items: center;
+        text-align: left;
     }
 }
 
@@ -145,9 +144,34 @@ body.light-theme .accordion-body{
     }
     .accordion-header{
         height: 80px;
-        text-align: center;
-        align-items: center;
+        text-align: left;
         padding-left: 22px;
+    }
+    p.question1{
+        padding-right: 2%;
+    }
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1224px) {
+    .faq1, .faq2{
+        width: 100%;
+    }
+    .accordion-header.active + #q1{
+        height: 300px;
+    }
+    .accordion-header.active + .accordion-body{
+        height: 170px;
+    }
+    .accordion-body p{
+        margin-top: 5%;
+    }
+    .accordion-header{
+        height: 80px;
+        text-align: left;
+        padding-left: 22px;
+    }
+    p.question1{
+        padding-right: 2%;
     }
 }
 
