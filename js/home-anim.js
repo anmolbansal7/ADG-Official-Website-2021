@@ -58,7 +58,16 @@ var introVid = document.getElementById('introVid');
 
     .on("leave", function(){
         introVid.pause();
-    })    
+    })  
+    
+    
+    //refresh page on browser resize
+$(window).bind('resize', function(e)
+{
+  console.log('window resized..');
+  this.location.reload(false); /* false to get page from cache */
+  /* true to fetch page from server */
+});
 
 } else if (width <= 1024) {
         //pin the girl
@@ -162,12 +171,3 @@ document.addEventListener("visibilitychange", function () {
         window.location = 'domains.html';
     });
     
-
-
-    //refresh page on browser resize
-$(window).bind('resize', function(e)
-{
-  console.log('window resized..');
-  this.location.reload(false); /* false to get page from cache */
-  /* true to fetch page from server */
-});
