@@ -5,21 +5,6 @@ var introVid = document.getElementById('introVid');
     //init scrollmagic
     var controller = new ScrollMagic.Controller();
 
-//    // //pin the navbar
-//     var pinNavbar = new ScrollMagic.Scene({
-//         triggerElement: '#navbar',
-//         triggerHook: 0,
-//         duration: '110%'
-//      })
-
-//      .setPin('#navbar', {pushFollowers: false})
-//      .addIndicators({
-//          name: 'navbar'
-//     })
-//      .addTo(controller); 
-
-
-
 (function(){
     var width = window.innerWidth,
     height = window.innerHeight;
@@ -35,10 +20,10 @@ var introVid = document.getElementById('introVid');
     })
 
     .setPin('#home-girl', {pushFollowers: false})
-    // .addIndicators({
+    //.addIndicators({
     //     name: 'girl',
     //     colorTrigger: 'white'
-    // })
+    //})
     .addTo(controller);
 
     //pin the video div
@@ -75,7 +60,7 @@ var introVid = document.getElementById('introVid');
         introVid.pause();
     })    
 
-} else if (width < 1024) {
+} else if (width <= 1024) {
         //pin the girl
     var pinIntroScene = new ScrollMagic.Scene({
         triggerElement: '#home-girl',
@@ -114,7 +99,7 @@ var introVid = document.getElementById('introVid');
     var controlVid = new ScrollMagic.Scene({
         triggerElement: '#introVid',
         duration: '50%',
-        triggerHook: 0
+        triggerHook: 0.4
     })
     //controlVid = controlVid.destroy(true);
     // controlVid = null;

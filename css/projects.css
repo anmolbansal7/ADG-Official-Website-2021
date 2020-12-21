@@ -82,7 +82,7 @@ p.project-sub{
     letter-spacing: 1.5px;
     /* color: #0071ee; */
     padding-bottom: 4px;
-    background: linear-gradient(to right, #0071ee, #227fff);
+    background: linear-gradient(to right, #005cc2, #419bff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -97,6 +97,7 @@ ul.tap li:hover{
 	transform: scale(1);
 	-webkit-transform: scale(1);
     font-weight: normal;
+    color: inherit;
 }
 
 ul.tap li::before {
@@ -130,6 +131,7 @@ ul.adgi li:hover{
 	transform: scale(1);
 	-webkit-transform: scale(1);
     font-weight: normal;
+    color: inherit;
 }
 
 ul.adgi li::before {
@@ -182,6 +184,7 @@ ul.adge li:hover{
 	transform: scale(1);
 	-webkit-transform: scale(1);
     font-weight: normal;
+    color: inherit;
 }
 
 ul.adge li::before {
