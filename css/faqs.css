@@ -72,7 +72,6 @@ body.light-theme .accordion-body{
     font-size: 15px;
     line-height: 22px;
 }
-
 .accordion-header:hover{
     color:rgba(255,255,255,0.6);
     border-color: rgba(255,255,255,0.6);
@@ -87,10 +86,10 @@ body.light-theme .accordion-body{
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-    right: 15px;
+    right: 10px;
     width: 20px;
     height: 2px;
-    background-color: white;
+    background-color:white;
 }
 .accordion-wrap .accordion-header::after{
     transform: rotate(-90deg);
@@ -124,6 +123,11 @@ body.light-theme .accordion-body{
     .accordion-body p{
         margin-top: 5%;
     }
+    .accordion-header{
+        height: 100px;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 321px) and (max-width: 760px) {
@@ -138,6 +142,12 @@ body.light-theme .accordion-body{
     }
     .accordion-body p{
         margin-top: 5%;
+    }
+    .accordion-header{
+        height: 80px;
+        text-align: center;
+        align-items: center;
+        padding-left: 22px;
     }
 }
 
