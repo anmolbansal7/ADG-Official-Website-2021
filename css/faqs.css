@@ -135,7 +135,7 @@ body.light-theme .accordion-body{
         width: 100%;
     }
     .accordion-header.active + #q1{
-        height: 260px;
+        height: 300px;
     }
     .accordion-header.active + .accordion-body{
         height: 170px;
