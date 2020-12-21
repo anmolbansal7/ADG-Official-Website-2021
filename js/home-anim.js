@@ -59,8 +59,8 @@ var introVid = document.getElementById('introVid');
     .on("leave", function(){
         introVid.pause();
     }) 
-     
-    window.onresize = function(){ location.reload(); }
+
+    // window.onresize = function(){ location.reload(); }
 
 } else if (width <= 1024) {
         //pin the girl
