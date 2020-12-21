@@ -273,7 +273,7 @@ figcaption{
 @media only screen and (min-width: 761px) and (max-width: 1224px) {
   .home-girl{
     padding-top: 10%;
-    height: 60vh;
+    height: 85vh;
   }
   .girl-icon {
     width: 80%;
@@ -285,7 +285,7 @@ figcaption{
     margin-top: -30px;
   }
   .home{
-    height: 70vh;
+    height: 80vh;
   }
   .home-video{
     height: 60vh;
