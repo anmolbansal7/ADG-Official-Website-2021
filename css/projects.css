@@ -237,6 +237,9 @@ ul.adge li::before {
     ul.adgi li::before{
         display: none;
     }
+    #tap-title{
+        font-size: 50px;
+    }
     #adgi-title{
         font-size: 50px;
     }
@@ -323,13 +326,17 @@ ul.adge li::before {
 
         display: none;
     }
+    #tap-title{
+        font-size: 50px;
+        /* margin-top: -20%; */
+    }
     #adgi-title{
         font-size: 50px;
-        margin-top: -20%;
+        /* margin-top: -20%; */
     }
     #adge-title{
         font-size: 50px;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
     ul.adge li::before{
         display: none;
