@@ -149,6 +149,9 @@ a{
         float: center;
         margin-left: 20%;
     }
+    #ci{
+        margin-top: -30%;
+    }
     .contact-info, .more-info{
         padding: 2%;
     }
@@ -157,7 +160,7 @@ a{
     }
   }
   
-  @media screen and (min-width: 321px) and (max-width: 760px) {
+  @media screen and (min-width: 321px) and (max-width: 720px) {
     .main1{
         height: 60vh;
     }
@@ -169,18 +172,52 @@ a{
         margin-left: 5%;
     }
     h2.contact-us{
-        margin-left: 30%;
-
+        margin-left: 35%;
     }
     .contact-info, .more-info{
         padding: 5%;
     }
     .contact-form{
-        height: 450px;
+        height: 540px;
+        margin-bottom: 20%;
+    }
+    #ci{
+        margin-top: 35%;
+        margin-right: 5%;
+        font-size: 40px;
+        align-items: center;
+        text-align:center;
+    }
+  }
+  @media only screen and (min-width: 720px) and (max-width: 760px) {
+    #ci{
+        margin-top: 30%;
+        margin-right: 6%;
+        font-size: 40px;
+        align-items: center;
+        text-align:center;
+    }
+    .contact2{
+        display: none;
+    }
+    .main1{
+        height: 60vh;
+    }
+    .contact1{
+        width: 70%;
+        margin-left: 5%;
+    }
+    h2.contact-us{
+        margin-left: 35%;
+    }
+    .contact-info, .more-info{
+        padding: 5%;
+    }
+    .contact-form{
+        height: 540px;
         margin-bottom: 20%;
     }
   }
-  
   @media only screen and (min-width: 761px) and (max-width: 1224px) {
     .main1{
         height: 70vh;
@@ -200,11 +237,18 @@ a{
         padding: 5%;
     }
     .contact-form{
-        height: 60vh;
+        height: 750px;
         margin-bottom: 20%;
     }
     .contact-heading{
         margin-right: 0;
+    }
+    #ci{
+        margin-top: 40%;
+        margin-right: 10%;
+        font-size: 45px;
+        align-items: center;
+        text-align:center;
     }
   }
   
