@@ -158,8 +158,7 @@ video:focus {
 }
 
 #introVid {
-  cursor: alias;
-}
+  cursor: url("https://i.ibb.co/DggMpLm/business.png"), auto;
 
 figcaption {
   display: none;
