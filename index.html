@@ -21,7 +21,8 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
-		
+		<link rel="preload" as="image" href="Assets/Home-Page/girl.svg">
+		<link rel="preload" as="image" href="Assets/Common-Assets/adggif.gif">
 		<!-- Title and Logo-->
 		<title>ADG | VIT Vellore</title>
 		<!-- Favicon -->
@@ -231,7 +232,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous"></script>
 		<script src="js/nav-script.js"></script>
-		<script src="js/preloader.js"></script>
+		<!-- <script src="js/preloader.js"></script> -->
 		<!-- <script src="js/foot-script.js"></script> -->
 		<script src="js/home-anim.js"></script>
 		<script src="js/home.js"></script>
@@ -240,5 +241,31 @@
 		<!-- <script>
 			AOS.init();
 		</script> -->
+		<script>
+			var loader;
+
+			function loadNow(opacity) {
+				if (opacity <= 0) {
+					displayContent();
+				} else {
+					loader.style.opacity = opacity;
+					window.setTimeout(function () {
+						loadNow(opacity - 0.1);
+					}, 50);
+				}
+			}
+
+			function displayContent() {
+				loader.style.display = "none";
+				document.getElementById("content").style.display = "block";
+			}
+
+			document.addEventListener("DOMContentLoaded", function () {
+				loader = document.getElementById("loader");
+				loadNow(3);
+			});
+
+
+		</script>
 	</body>
 </html>
