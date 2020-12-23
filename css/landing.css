@@ -25,6 +25,7 @@ body.light-theme {
   margin-left: auto;
   margin-right: auto;
   height: 92vh;
+  padding-top: 5%;
 }
 
 .home {
@@ -253,6 +254,7 @@ div.scrollmagic-pin-spacer{
   }
   .domain-icon {
     width: 280px;
+    height: auto;
     margin-bottom: -10px;
   }
   #tagline {
