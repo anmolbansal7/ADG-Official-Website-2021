@@ -81,11 +81,13 @@ body.light-theme {
   bottom: 70px;
   letter-spacing: 0.2em;
 }
+
 #about-button {
   position: relative;
   bottom: 70px;
   margin-bottom: -10px;
 }
+
 .heading-home {
   font-size: 80px;
   /* font-family: "sf_pro_displayregular"; */
@@ -159,6 +161,7 @@ video:focus {
 
 #introVid {
   cursor: url("https://i.ibb.co/DggMpLm/business.png"), auto;
+}
 
 figcaption {
   display: none;
@@ -166,6 +169,10 @@ figcaption {
 #home04 :hover + figcaption {
   opacity: 0.5;
   display: block;
+}
+
+div.scrollmagic-pin-spacer{
+  z-index: 1;
 }
 
 @media screen and (max-width: 320px) {
