@@ -119,6 +119,7 @@ img.adg-logo {
 		position: absolute;
 		right: 0px;
 		height: 92vh;
+		min-height: -webkit-fill-available;
 		width: 50%;
 		top: 8vh;
 		background-color: black;
