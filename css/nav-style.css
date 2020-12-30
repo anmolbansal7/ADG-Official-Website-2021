@@ -118,8 +118,7 @@ img.adg-logo {
 	.navlinks {
 		position: absolute;
 		right: 0px;
-		height: 85vh;
-		min-height: -webkit-fill-available;
+		height: 92vh;
 		width: 50%;
 		top: 8vh;
 		background-color: black;
