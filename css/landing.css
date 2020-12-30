@@ -273,6 +273,9 @@ div.scrollmagic-pin-spacer{
   .heading-home {
     font-size: 60px;
   }
+  #domain-heading{
+    margin-top: 5px;
+  }
 }
 
 @media only screen and (min-width: 761px) and (max-width: 1224px) {

@@ -172,22 +172,26 @@ a{
         margin-left: 5%;
     }
     h2.contact-us{
-        margin-left: 35%;
+        margin-left: 28%;
     }
     .contact-info, .more-info{
         padding: 5%;
+        width: 85%;
+        margin-left: 8%;
+        margin-right: 0%;
     }
     .contact-form{
-        height: 540px;
+        height: auto;
         margin-bottom: 20%;
+        padding-bottom: 5%;
     }
-    #ci{
+    /* #ci{
         margin-top: 35%;
         margin-right: 5%;
         font-size: 40px;
         align-items: center;
         text-align:center;
-    }
+    } */
   }
   @media only screen and (min-width: 720px) and (max-width: 760px) {
     #ci{
