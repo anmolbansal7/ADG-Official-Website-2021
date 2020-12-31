@@ -51,6 +51,7 @@ img.adg-logo {
 	padding-bottom: 2.5vh;
 	padding-top: 2vh;
 }
+
 /* Active Nav Link */
 #active {
 	opacity: 1;
@@ -62,6 +63,7 @@ img.adg-logo {
 	position: absolute;
 	background-color: #e5e5e5;
 }
+
 /* Nav Link Animation */
 .nav-link:hover {
 	opacity: 1;
@@ -118,7 +120,7 @@ img.adg-logo {
 	.navlinks {
 		position: absolute;
 		right: 0px;
-		height: 88vh;
+		height: 92vh;
 		width: 50%;
 		top: 8vh;
 		background-color: black;
@@ -143,6 +145,7 @@ img.adg-logo {
 .nav-active {
 	transform: translateX(0%);
 }
+
 /* Responsive Navlink Animation */
 @keyframes navLinkFade {
 	from {
